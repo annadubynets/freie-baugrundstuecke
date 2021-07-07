@@ -1,0 +1,173 @@
+@import "./bootstrap.min.css";
+@import "fonts.css";
+h1,
+h2,
+h3,
+h4,
+h6 {
+  font-family: "Exo 2";
+  font-weight: normal;
+  color: #99C151;
+}
+
+h1 {
+  font-size: 30px;
+}
+
+h2 {
+  font-size: 23px;
+  line-height: 30px;
+}
+
+h3 {
+  font-size: 21px;
+  line-height: 30px;
+}
+
+h4 {
+  font-size: 21px;
+  line-height: 30px;
+}
+
+h6 {
+  font-size: 16px;
+  color: #3C3C3C;
+}
+
+p {
+  font-size: 16px;
+  line-height: 30px;
+  color: #3C3C3C;
+}
+
+.font-weight-600 {
+  font-weight: 600;
+}
+
+.font-weight-500 {
+  font-weight: 500;
+}
+
+.font-size-14 {
+  font-size: 14px;
+}
+
+.bg-light {
+  background-color: rgba(243, 243, 243, 0.9) !important;
+}
+
+.bg-white {
+  background-color: rgba(255, 255, 255, 0.9) !important;
+}
+
+.bg-secondary {
+  background-color: #F3F3F3 !important;
+}
+
+.pt-77px {
+  padding-top: 77px;
+}
+
+.pt-130px {
+  padding-top: 130px;
+}
+
+.pb-85px {
+  padding-bottom: 85px;
+}
+
+.mb-74px {
+  margin-bottom: 74px;
+}
+
+body {
+  font-family: "Montserrat";
+  font-weight: normal;
+}
+
+header {
+  padding: 0 99px;
+}
+
+footer {
+  padding: 68px 0 33px;
+}
+
+.navbar-top .navbar .nav .nav-item .nav-link {
+  font-weight: normal;
+  font-size: 12px !important;
+  color: #9A9A9A;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  font-family: "Exo 2";
+  font-weight: normal;
+  font-size: 16px;
+  color: #3C3C3C;
+  text-transform: uppercase;
+}
+
+.navbar-top .navbar-nav .nav-link {
+  font-family: "Exo 2";
+  font-weight: normal;
+  font-size: 12px;
+  color: #9A9A9A !important;
+  text-transform: initial !important;
+}
+
+.jumbotron {
+  background-image: url("../images/main-bg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 85px 105px;
+}
+
+.btn-success {
+  font-weight: bold;
+  font-size: 16px;
+  border-radius: 50px;
+  border: 1px solid #6f942d;
+  padding: 12px 40px;
+  color: #FFFFFF !important;
+  background-color: #99C151;
+}
+.btn-success:focus {
+  background-color: #6f942d !important;
+}
+
+.card {
+  border: none;
+}
+
+.list-unstyled li a {
+  font-size: 12px;
+  line-height: 30px;
+  color: #3C3C3C;
+  text-decoration: none;
+}
+
+.carousel-indicators {
+  bottom: -40px;
+}
+
+.carousel-indicators [data-bs-target] {
+  background-color: #FFFFFF;
+  border: 1px solid #799C3C;
+  width: 10px;
+  height: 10px;
+  border-radius: 50px;
+}
+
+.carousel-indicators [data-bs-target].active {
+  background-color: #99C151;
+}
+
+footer .footer-list li {
+  display: inline;
+}
+footer .footer-list li a {
+  font-weight: 600;
+  font-size: 12px;
+}
+
+/*# sourceMappingURL=style.css.map */

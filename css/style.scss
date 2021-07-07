@@ -1,0 +1,92 @@
+@import "./bootstrap.min.css";
+@import "fonts.css";
+@import "variables";
+body {
+    font-family: 'Montserrat';
+    font-weight: normal;
+}
+
+header {
+    padding: 0 99px;
+}
+
+footer {
+    padding: 68px 0 33px;
+}
+
+.navbar-top .navbar .nav .nav-item .nav-link {
+    font-weight: normal;
+    font-size: 12px!important;
+    color: #9A9A9A;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    font-family: 'Exo 2';
+    font-weight: normal;
+    font-size: 16px;
+    color: $black-color;
+    text-transform: uppercase;
+}
+
+.navbar-top .navbar-nav .nav-link {
+    font-family: 'Exo 2';
+    font-weight: normal;
+    font-size: 12px;
+    color: #9A9A9A!important;
+    text-transform: initial!important;
+}
+
+.jumbotron {
+    background-image: url("../images/main-bg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 85px 105px;
+}
+
+.btn-success {
+    font-weight: bold;
+    font-size: 16px;
+    border-radius: 50px;
+    border: 1px solid #6f942d;
+    padding: 12px 40px;
+    color: $white-color!important;
+    background-color: $green-color;
+    &:focus {
+        background-color: #6f942d!important;
+    }
+}
+
+.card {
+    border: none;
+}
+
+.list-unstyled li a {
+    font-size: 12px;
+    line-height: 30px;
+    color: $black-color;
+    text-decoration: none;
+}
+
+.carousel-indicators {
+    bottom: -40px;
+}
+
+.carousel-indicators [data-bs-target] {
+    background-color: $white-color;
+    border: 1px solid #799C3C;
+    width: 10px;
+    height: 10px;
+    border-radius: 50px;
+}
+
+.carousel-indicators [data-bs-target].active {
+    background-color: $green-color;
+}
+
+footer .footer-list li {
+    display: inline;
+    a {
+        font-weight: 600;
+        font-size: 12px;
+    }
+}

@@ -36,8 +36,8 @@
 
 @font-face {
     font-family: 'icomoon';
-    src: url('../fonts/icomoon.eot?mxr8gp');
-    src: url('../fonts/icomoon.eot?mxr8gp#iefix') format('embedded-opentype'), url('../fonts/icomoon.ttf?mxr8gp') format('truetype'), url('../fonts/icomoon.woff?mxr8gp') format('woff'), url('../fonts/icomoon.svg?mxr8gp#icomoon') format('svg');
+    src: url('../fonts/icomoon.eot?7uzomq');
+    src: url('../fonts/icomoon.eot?7uzomq#iefix') format('embedded-opentype'), url('../fonts/icomoon.ttf?7uzomq') format('truetype'), url('../fonts/icomoon.woff?7uzomq') format('woff'), url('../fonts/icomoon.svg?7uzomq#icomoon') format('svg');
     font-weight: normal;
     font-style: normal;
     font-display: block;
@@ -58,6 +58,48 @@
     -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-map-marker-solid:before {
+.icon-minus .path1:before {
     content: "\e900";
+    color: rgb(148, 181, 59);
+}
+
+.icon-minus .path2:before {
+    content: "\e901";
+    margin-left: -1.052734375em;
+    color: rgb(255, 255, 255);
+}
+
+.icon-minus .path3:before {
+    content: "\e902";
+    margin-left: -1.052734375em;
+    color: rgb(255, 255, 255);
+}
+
+.icon-plus .path1:before {
+    content: "\e903";
+    color: rgb(148, 181, 59);
+}
+
+.icon-plus .path2:before {
+    content: "\e904";
+    margin-left: -1em;
+    color: rgb(255, 255, 255);
+}
+
+.icon-plus .path3:before {
+    content: "\e905";
+    margin-left: -1em;
+    color: rgb(255, 255, 255);
+}
+
+.icon-plus .path4:before {
+    content: "\e906";
+    margin-left: -1em;
+    color: rgb(255, 255, 255);
+}
+
+.icon-plus .path5:before {
+    content: "\e907";
+    margin-left: -1em;
+    color: rgb(255, 255, 255);
 }

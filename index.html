@@ -11,11 +11,11 @@
 
 <body>
     <header>
-        <div id="navbar-top-main" class="navbar-expand-lg navbar-top navbar-light bg-white pt-2">
+        <div id="navbar-top-main" class="navbar-expand-lg navbar-top navbar-light bg-white pt-2 d-lg-block d-none">
             <div class="container-fluid">
                 <div class="navbar-nav align-items-center">
                     <div class="ms-auto">
-                        <ul class="nav">
+                        <ul class="nav nav-style">
                             <li class="nav-item">
                                 <a class="nav-link" href="#">Willkommen</a>
                             </li>
@@ -36,22 +36,17 @@
         <div class="navbar navbar-expand-lg navbar-light bg-white pb-5">
             <div class="container-fluid">
                 <a class="navbar-brand" href="./index.html">
-                    <img src="images/logo.svg" class="navbar-brand-img" alt="logo">
+                    <img src="images/logo.svg" class="navbar-brand-img d-lg-block d-none" alt="logo">
+                    <img src="images/logo-mobile.svg" class="navbar-brand-img d-lg-none d-block" alt="logo mobile">
                 </a>
                 <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="navbar-collapse collapse align-self-end" id="navbarCollapse" style="">
-
-                    <!-- Toggler -->
-                    <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-                      <i class="fe fe-x"></i>
-                    </button>
-
+                <div class="navbar-collapse collapse align-self-end" id="navbarCollapse">
                     <!-- Navigation -->
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item">
-                            <a class="nav-link" href="#">BAUGEBIETE/BAULÜCKEN</a>
+                            <a class="nav-link active" href="baugebiete.html">BAUGEBIETE/BAULÜCKEN</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">LEERSTANDSKATASTER</a>
@@ -60,9 +55,27 @@
                             <a class="nav-link" href="#">BAU-INTERESSENTENLISTE</a>
                         </li>
                     </ul>
+
+                    <ul class="nav nav-style d-lg-none d-block">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Willkommen</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Informationen</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Grundstücksbesitzer-Login</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Kontakt</a>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>
+    </header>
+
+    <section class="hero">
         <div class="jumbotron">
             <div class="container-fluid">
                 <div class="row">
@@ -78,7 +91,7 @@
                 </div>
             </div>
         </div>
-    </header>
+    </section>
 
     <section class="pt-77px">
         <div class="container">
@@ -113,7 +126,8 @@
                                             <img src="images/product-1.png" class="w-100" alt="product 1">
                                             <div class="bg-white p-4 position-absolute w-100" style="left: 0; bottom: 0;">
                                                 <h4>Weilburg-Kubach "Auf der Seelbach"</h4>
-                                                <p class="mb-0"><span class="icon-map-marker-solid pe-1"></span> 35781 Weilburg - Kubach</p>
+                                                <p class="mb-0"><span class="pe-2"><img src="images/location.png" class="img-style"></span> 35781 Weilburg - Kubach
+                                                </p>
                                             </div>
                                         </div>
                                     </div>
@@ -122,7 +136,8 @@
                                             <img src="images/product-2.png" class="w-100" alt="product 1">
                                             <div class="bg-white p-4 position-absolute w-100" style="left: 0; bottom: 0;">
                                                 <h4>ca. 546m2 Baulücke</h4>
-                                                <p class="mb-0"><span class="icon-map-marker-solid pe-1"></span> 65618 Selters - Haintchen</p>
+                                                <p class="mb-0"><span class="pe-2"><img src="images/location.png" class="img-style"></span> 65618 Selters - Haintchen
+                                                </p>
                                             </div>
                                         </div>
                                     </div>
@@ -131,7 +146,8 @@
                                             <img src="images/product-3.png" class="w-100" alt="product 1">
                                             <div class="bg-white p-4 position-absolute w-100" style="left: 0; bottom: 0;">
                                                 <h4>Hausen</h4>
-                                                <p class="mb-0"><span class="icon-map-marker-solid pe-1"></span> 65326 Aarbergen - Hausen</p>
+                                                <p class="mb-0"><span class="pe-2"><img src="images/location.png" class="img-style"></span> 65326 Aarbergen - Hausen
+                                                </p>
                                             </div>
                                         </div>
                                     </div>
@@ -215,7 +231,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <div class="card bg-secondary mb-74px">
+                    <div class="card bg-body mb-74px">
                         <div class="row">
                             <div class="col-lg-7">
                                 <img src="images/product-4.png" class="img-fluid" alt="card picture">
@@ -236,7 +252,7 @@
         </div>
     </section>
 
-    <section class="bg-secondary pt-5 pb-85px">
+    <section class="bg-body pt-5 pb-85px">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-lg-12 text-center">
@@ -251,7 +267,7 @@
                             <div class="carousel-item active">
                                 <div class="row">
                                     <div class="col">
-                                        <img src="images/partner-1.png">
+                                        <img src="images/partner-1.svg">
                                     </div>
                                     <div class="col">
                                         <img src="images/partner-2.png">
@@ -323,13 +339,14 @@
         </div>
     </section>
 
-    <footer class="bg-secondary">
+    <footer class="bg-body">
         <div class="container">
             <div class="row mb-74px">
-                <div class="col-lg-6">
+                <div class="col-lg-6 mb-lg-0 mb-5">
                     <p class="font-size-12 font-weight-600">FreieBaugrundstuecke.de ist eine Entwicklung der Coptercam AG
                     </p>
-                    <img src="images/footer-logo.svg">
+                    <img src="images/footer-logo.svg" class="d-lg-block d-none">
+                    <img src="images/footer-logo-mobile.svg" class="d-lg-none d-block">
                 </div>
                 <div class="col-lg-3">
                     <h6>Freie Baugrundstücke</h6>
@@ -342,7 +359,7 @@
                 </div>
                 <div class="col-lg-3">
                     <h6>Informationen</h6>
-                    <ul class="list-unstyled">
+                    <ul class="list-unstyled mb-0">
                         <li><a href="#">Über das Portal</a></li>
                         <li><a href="#">Referenzen</a></li>
                         <li><a href="#">Login</a></li>
@@ -351,11 +368,11 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-lg-6">
+                <div class="col-lg-6 order-lg-0 order-1">
                     <div class="font-size-12 font-weight-600">© 2021 – freiebaugrundstuecke.de
                     </div>
                 </div>
-                <div class="col-lg-6 text-end">
+                <div class="col-lg-6 text-lg-end text-start order-lg-1 order-0">
                     <ul class="footer-list list-unstyled">
                         <li class="pe-3"><a href="#">Datenschutz</a></li>
                         <li><a href="#">Impressum</a></li>
@@ -366,8 +383,10 @@
     </footer>
 
     <script src="//code.jquery.com/jquery-1.12.4.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="//code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="https://unpkg.com/@popperjs/core@2"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap-select.min.js"></script>
     <script src="js/scripts.js"></script>
 </body>
 

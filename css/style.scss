@@ -1,4 +1,5 @@
 @import "./bootstrap.min.css";
+@import "./bootstrap-select.min.css";
 @import "fonts.css";
 @import "variables";
 body {
@@ -10,14 +11,29 @@ header {
     padding: 0 99px;
 }
 
+@media (max-width: 768px) {
+    header {
+        padding: 0;
+    }
+    footer {
+        padding-top: 42px!important;
+    }
+}
+
 footer {
     padding: 68px 0 33px;
 }
 
-.navbar-top .navbar .nav .nav-item .nav-link {
+.hero {
+    padding: 0 99px;
+}
+
+.nav-style .nav-link {
+    font-family: 'Exo 2';
     font-weight: normal;
-    font-size: 12px!important;
-    color: #9A9A9A;
+    font-size: 12px;
+    color: #9A9A9A!important;
+    text-transform: initial!important;
 }
 
 .navbar-light .navbar-nav .nav-link {
@@ -26,14 +42,41 @@ footer {
     font-size: 16px;
     color: $black-color;
     text-transform: uppercase;
+    &:active,
+    &:focus,
+    &:hover {
+        color: $green-color!important;
+    }
 }
 
-.navbar-top .navbar-nav .nav-link {
-    font-family: 'Exo 2';
-    font-weight: normal;
-    font-size: 12px;
-    color: #9A9A9A!important;
-    text-transform: initial!important;
+.navbar-light .navbar-toggler {
+    border: none;
+    &:focus {
+        box-shadow: none;
+    }
+}
+
+.navbar-light.expanded .navbar-toggler-icon {
+    background-image: url("../images/icon-menu.svg");
+    max-width: 20px;
+    max-height: 20px;
+}
+
+.navbar-light .navbar-toggler-icon {
+    background-image: url("../images/toggler-icon.svg");
+    max-width: 20px;
+    max-height: 20px;
+}
+
+.nav-pills .nav-link.active,
+.nav-pills .show>.nav-link {
+    background-color: transparent!important;
+    color: $green-color!important;
+}
+
+.nav-pills .nav-link {
+    color: $black-color!important;
+    color: 13px;
 }
 
 .jumbotron {
@@ -51,9 +94,43 @@ footer {
     padding: 12px 40px;
     color: $white-color!important;
     background-color: $green-color;
-    &:focus {
+    &:focus,
+    &:hover {
         background-color: #6f942d!important;
     }
+}
+
+.btn-light {
+    font-weight: bold;
+    font-size: 16px;
+    border-radius: 50px;
+    border: 1px solid #6f942d;
+    padding: 12px 40px;
+    color: $black-color!important;
+    background-color: $white-color;
+    &:focus,
+    &:hover {
+        background-color: #6f942d!important;
+        color: $white-color!important;
+    }
+}
+
+.dropdown-toggle.btn-light {
+    &focus,
+    &:hover {
+        background-color: $white-color!important;
+        color: $black-color!important;
+    }
+}
+
+.btn-default {
+    background-color: $white-color;
+}
+
+.btn-secondary {
+    background-color: #F8F8F8!important;
+    border: none;
+    border-radius: 0!important;
 }
 
 .card {
@@ -89,4 +166,157 @@ footer .footer-list li {
         font-weight: 600;
         font-size: 12px;
     }
+}
+
+.accordion-item {
+    background-color: $light-color;
+    border: none;
+}
+
+.accordion-button {
+    color: $black-color;
+    background-color: #E3E3E3;
+    box-shadow: none;
+    border: none;
+    border-radius: 0;
+    &:focus {
+        box-shadow: none;
+    }
+}
+
+.accordion-button:not(.collapsed) {
+    color: $black-color;
+    background-color: #E3E3E3;
+    box-shadow: none;
+    border: none;
+    border-radius: 0;
+}
+
+.accordion-item:first-of-type {
+    border-radius: 0;
+}
+
+.accordion-item:last-of-type .accordion-button.collapsed {
+    border-radius: 0;
+}
+
+.accordion-item:first-of-type .accordion-button {
+    border-radius: 0;
+}
+
+.accordion-button::after {
+    background-image: url("../images/plus-icon.svg");
+}
+
+.accordion-button:not(.collapsed)::after {
+    background-image: url("../images/minus-icon.svg");
+}
+
+.form-check-input {
+    width: 40px;
+    height: 40px;
+    border-radius: 0!important;
+    border: none;
+}
+
+.form-check-label {
+    font-weight: 500;
+    font-size: 14px;
+    color: $black-color;
+}
+
+.form-label {
+    font-family: 'Exo 2', sans-serif;
+    font-weight: normal;
+    font-size: 16px;
+    color: $black-color;
+}
+
+.form-control {
+    color: $black-color;
+    border: none;
+    border-radius: 0;
+    font-size: 14px;
+}
+
+.input-group-text {
+    background-color: $white-color;
+    border: none;
+    border-radius: 0;
+    font-size: 14px;
+}
+
+.bootstrap-select .dropdown-toggle:focus,
+.bootstrap-select>select.mobile-device:focus+.dropdown-toggle {
+    outline: 0!important;
+    outline-offset: 0!important;
+}
+
+.bootstrap-select .dropdown-toggle::after {
+    content: "";
+    background-image: url("../images/arrow-down.svg");
+    background-repeat: no-repeat;
+    width: 30px;
+    height: 12px;
+    border-top: none;
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+}
+
+.dropdown-toggle {
+    &::after {
+        content: "";
+        background-image: url("../images/arrow-down.svg");
+        background-repeat: no-repeat;
+        width: 30px;
+        height: 12px;
+        border-top: none;
+        border-bottom: none;
+        border-left: none;
+        border-right: none;
+    }
+}
+
+.dropdown-menu {
+    border: none;
+}
+
+.btn-check:focus+.btn-secondary,
+.btn-secondary:focus {
+    box-shadow: none!important;
+}
+
+.bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn) {
+    width: 100%;
+}
+
+.dropdown-item.active,
+.dropdown-item:active {
+    background-color: $green-color;
+    box-shadow: none;
+}
+
+.dropdown-toggle.btn-light {
+    border-radius: 0;
+    border: none;
+    padding: 10px 19px;
+}
+
+.dropdown-toggle .dropdown-item {
+    &focus,
+    &:hover {
+        background-color: transparent!important;
+    }
+}
+
+.filter-option-inner-inner {
+    font-weight: 500;
+    font-size: 14px;
+    color: $black-color;
+}
+
+.img-style {
+    width: 15px;
+    height: 19px;
 }

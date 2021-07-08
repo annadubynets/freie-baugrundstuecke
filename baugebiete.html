@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <div id="navbar-top-main" class="navbar-expand-lg navbar-top navbar-light bg-white pt-2 d-lg-block d-none">
+            <div class="container-fluid">
+                <div class="navbar-nav align-items-center">
+                    <div class="ms-auto">
+                        <ul class="nav nav-style">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Willkommen</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Informationen</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Grundstücksbesitzer-Login</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Kontakt</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="navbar navbar-expand-lg navbar-light bg-white pb-5">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="./index.html">
+                    <img src="images/logo.svg" class="navbar-brand-img d-lg-block d-none" alt="logo">
+                    <img src="images/logo-mobile.svg" class="navbar-brand-img d-lg-none d-block" alt="logo mobile">
+                </a>
+                <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse collapse align-self-end" id="navbarCollapse">
+                    <!-- Navigation -->
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="baugebiete.html">BAUGEBIETE/BAULÜCKEN</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">LEERSTANDSKATASTER</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">BAU-INTERESSENTENLISTE</a>
+                        </li>
+                    </ul>
+
+                    <ul class="nav nav-style d-lg-none d-block">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Willkommen</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Informationen</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Grundstücksbesitzer-Login</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Kontakt</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="mb-74px">
+        <div class="container">
+            <div class="row mb-lg-5 mb-4">
+                <div class="col-lg-12">
+                    <h1>Baugrundstücke und Baulücken</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-3 mb-lg-0 mb-5">
+                    <div class="accordion mb-3" id="accordionExample">
+                        <div class="accordion-item mb-3">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                Bundesland / Landkreis
+                            </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <label for="bundeslandFormControlInput" class="form-label">Bundesland:</label>
+                                    <select class="selectpicker">
+                                        <option>Baden-Württemberg</option>
+                                        <option>Bayern</option>
+                                        <option>Berlin</option>
+                                        <option>Brandenburg</option>
+                                        <option>Bremen</option>
+                                        <option>Hamburg</option>
+                                        <option>Hessen</option>
+                                        <option>Mecklenburg-Vorpommern</option>
+                                        <option>Niedersachsen</option>
+                                        <option>Nordrhein-Westfalen</option>
+                                        <option>Rheinland-Pfalz</option>
+                                        <option>Saarland</option>
+                                        <option>Sachsen</option>
+                                        <option>Sachsen-Anhalt</option>
+                                        <option>Schleswig-Holstein</option>
+                                        <option>Thüringen</option>
+                                    </select>
+
+                                    <label for="landkreisFormControlInput" class="form-label mt-3">Landkreis:</label>
+                                    <select class="selectpicker">
+                                        <option>Limburg-Weilburg</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                Umkreissuche
+                            </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <label for="bundeslandFormControlInput" class="form-label">Bundesland:</label>
+                                    <select class="selectpicker">
+                                        <option>Baden-Württemberg</option>
+                                        <option>Bayern</option>
+                                        <option>Berlin</option>
+                                        <option>Brandenburg</option>
+                                        <option>Bremen</option>
+                                        <option>Hamburg</option>
+                                        <option>Hessen</option>
+                                        <option>Mecklenburg-Vorpommern</option>
+                                        <option>Niedersachsen</option>
+                                        <option>Nordrhein-Westfalen</option>
+                                        <option>Rheinland-Pfalz</option>
+                                        <option>Saarland</option>
+                                        <option>Sachsen</option>
+                                        <option>Sachsen-Anhalt</option>
+                                        <option>Schleswig-Holstein</option>
+                                        <option>Thüringen</option>
+                                    </select>
+
+                                    <label for="landkreisFormControlInput" class="form-label mt-3">Landkreis:</label>
+                                    <select class="selectpicker">
+                                        <option>Limburg-Weilburg</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-body p-3">
+                        <label for="landkreisFormControlInput" class="form-label">Neubaugebiet oder Baulücke:</label>
+                        <select class="selectpicker">
+                            <option>Egal</option>
+                            <option>Neubaugebiet</option>
+                            <option>Baulücken</option>
+                        </select>
+
+
+                        <label for="landkreisFormControlInput" class="form-label pt-3">Grundstücksfläche:</label>
+                        <div class="d-flex justify-content-between">
+                            <div class="input-group pe-1">
+                                <input type="text" class="form-control" placeholder="Von" aria-label="Von" aria-describedby="basic-addon">
+                                <span class="input-group-text" id="basic-addon">m²</span>
+                            </div>
+
+                            <div class="input-group ps-1">
+                                <input type="text" class="form-control" placeholder="Bis" aria-label="Bis" aria-describedby="basic-addon2">
+                                <span class="input-group-text" id="basic-addon2">m²</span>
+                            </div>
+                        </div>
+
+                        <div class="form-check mt-3">
+                            <input class="form-check-input mt-0" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label d-block ps-4" for="flexCheckDefault">
+                                mindestens ein Grund-
+                                stück verfügbar
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="d-grid gap-2 mt-4">
+                        <a href="#" class="btn btn-success">Filtern</a>
+                    </div>
+                </div>
+                <div class="col-lg-9">
+                    <h2>3 Suchergebnisse</h2>
+                    <div class="font-weight-600 font-size-16 text-dark pb-5">Entdecken Sie hier Ihre 3 Ergebnisse ihrer Suche.</div>
+
+                    <div class="card bg-body mb-5">
+                        <div class="row">
+                            <div class="col-lg-5">
+                                <img src="images/product-1.png" class="img-fluid" alt="card picture">
+                            </div>
+                            <div class="col-lg-7">
+                                <div class="card-body p-4">
+                                    <h3>Weilburg-Kubach "Auf der Seelbach"</h3>
+                                    <p class="mb-0"><span class="pe-2"><img src="images/location.png" class="img-style"></span> 35781 Weilburg - Kubach</p>
+                                    <p class="font-weight-500">Neubaugebiet</p>
+
+                                    <div>
+                                        <span class="badge bg-secondary">28 Grundstücke</span>
+                                        <span class="badge bg-warning">25 reserviert</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card bg-body mb-5">
+                        <div class="row">
+                            <div class="col-lg-5">
+                                <img src="images/product-2.png" class="img-fluid" alt="card picture">
+                            </div>
+                            <div class="col-lg-7">
+                                <div class="card-body p-4">
+                                    <h3>Haintchen</h3>
+                                    <p class="mb-0"><span class="pe-2"><img src="images/location.png" class="img-style"></span> 65618 Selters - Haintchen</p>
+                                    <p class="font-weight-500">Baulücke</p>
+
+                                    <div>
+                                        <span class="badge bg-secondary">1 Grundstück</span>
+                                        <span class="badge bg-success">1 verfügbar</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card bg-body">
+                        <div class="row">
+                            <div class="col-lg-5">
+                                <img src="images/product-3.png" class="img-fluid" alt="card picture">
+                            </div>
+                            <div class="col-lg-7">
+                                <div class="card-body p-4">
+                                    <h3>Hausen</h3>
+                                    <p class="mb-0"><span class="pe-2"><img src="images/location.png" class="img-style"></span> 65326 Aarbergen - Hausen über Aar
+                                    </p>
+                                    <p class="font-weight-500">Neubaugebiet</p>
+
+                                    <div>
+                                        <span class="badge bg-secondary">3 Grundstücke</span>
+                                        <span class="badge bg-warning">1 reserviert</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="pt-5 pb-85px">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-12 text-center">
+                    <h1 class="pb-1">Unsere Referenzen</h1>
+                    <p class="font-weight-600">Städte und Kommunen die mit uns zusammenarbeiten.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <img src="images/partner-1.png">
+                </div>
+                <div class="col">
+                    <img src="images/partner-2.png">
+                </div>
+                <div class="col">
+                    <img src="images/partner-3.png">
+                </div>
+                <div class="col">
+                    <img src="images/partner-4.png">
+                </div>
+                <div class="col">
+                    <img src="images/partner-5.png">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-body">
+        <div class="container">
+            <div class="row mb-74px">
+                <div class="col-lg-6 mb-lg-0 mb-5">
+                    <p class="font-size-12 font-weight-600">FreieBaugrundstuecke.de ist eine Entwicklung der Coptercam AG
+                    </p>
+                    <img src="images/footer-logo.svg" class="d-lg-block d-none">
+                    <img src="images/footer-logo-mobile.svg" class="d-lg-none d-block">
+                </div>
+                <div class="col-lg-3">
+                    <h6>Freie Baugrundstücke</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Baugebiete / Baulücken</a></li>
+                        <li><a href="#">Bau-Interessentenlisten</a></li>
+                        <li><a href="#">Leerstandskataster</a></li>
+                        <li><a href="#">Vergabekonzept</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3">
+                    <h6>Informationen</h6>
+                    <ul class="list-unstyled mb-0">
+                        <li><a href="#">Über das Portal</a></li>
+                        <li><a href="#">Referenzen</a></li>
+                        <li><a href="#">Login</a></li>
+                        <li><a href="#">Kontakt</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6 order-lg-0 order-1">
+                    <div class="font-size-12 font-weight-600">© 2021 – freiebaugrundstuecke.de
+                    </div>
+                </div>
+                <div class="col-lg-6 text-lg-end text-start order-lg-1 order-0">
+                    <ul class="footer-list list-unstyled">
+                        <li class="pe-3"><a href="#">Datenschutz</a></li>
+                        <li><a href="#">Impressum</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="//code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="//code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="https://unpkg.com/@popperjs/core@2"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap-select.min.js"></script>
+    <script src="js/scripts.js"></script>
+</body>
+
+</html>

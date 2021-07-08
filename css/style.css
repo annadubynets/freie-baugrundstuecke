@@ -1,4 +1,5 @@
 @import "./bootstrap.min.css";
+@import "./bootstrap-select.min.css";
 @import "fonts.css";
 h1,
 h2,
@@ -48,8 +49,16 @@ p {
   font-weight: 500;
 }
 
+.font-size-16 {
+  font-size: 16px;
+}
+
 .font-size-14 {
   font-size: 14px;
+}
+
+.font-size-12 {
+  font-size: 12px;
 }
 
 .bg-light {
@@ -60,8 +69,28 @@ p {
   background-color: rgba(255, 255, 255, 0.9) !important;
 }
 
-.bg-secondary {
+.bg-body {
   background-color: #F3F3F3 !important;
+}
+
+.bg-secondary {
+  background-color: #777777 !important;
+}
+
+.bg-warning {
+  background-color: #F0AD4E !important;
+}
+
+.bg-success {
+  background-color: #99C151 !important;
+}
+
+.text-success {
+  color: #99C151 !important;
+}
+
+.text-dark {
+  color: #3C3C3C !important;
 }
 
 .pt-77px {
@@ -76,10 +105,32 @@ p {
   padding-bottom: 85px;
 }
 
+.mt-80px {
+  margin-top: 80px;
+}
+
 .mb-74px {
   margin-bottom: 74px;
 }
 
+@media (max-width: 768px) {
+  h1,
+h2 {
+    font-size: 20px;
+  }
+
+  h3 {
+    font-size: 16px;
+  }
+
+  p {
+    font-size: 14px;
+  }
+
+  .mb-74px {
+    margin-bottom: 38px;
+  }
+}
 body {
   font-family: "Montserrat";
   font-weight: normal;
@@ -89,14 +140,29 @@ header {
   padding: 0 99px;
 }
 
+@media (max-width: 768px) {
+  header {
+    padding: 0;
+  }
+
+  footer {
+    padding-top: 42px !important;
+  }
+}
 footer {
   padding: 68px 0 33px;
 }
 
-.navbar-top .navbar .nav .nav-item .nav-link {
+.hero {
+  padding: 0 99px;
+}
+
+.nav-style .nav-link {
+  font-family: "Exo 2";
   font-weight: normal;
-  font-size: 12px !important;
-  color: #9A9A9A;
+  font-size: 12px;
+  color: #9A9A9A !important;
+  text-transform: initial !important;
 }
 
 .navbar-light .navbar-nav .nav-link {
@@ -106,13 +172,38 @@ footer {
   color: #3C3C3C;
   text-transform: uppercase;
 }
+.navbar-light .navbar-nav .nav-link:active, .navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
+  color: #99C151 !important;
+}
 
-.navbar-top .navbar-nav .nav-link {
-  font-family: "Exo 2";
-  font-weight: normal;
-  font-size: 12px;
-  color: #9A9A9A !important;
-  text-transform: initial !important;
+.navbar-light .navbar-toggler {
+  border: none;
+}
+.navbar-light .navbar-toggler:focus {
+  box-shadow: none;
+}
+
+.navbar-light.expanded .navbar-toggler-icon {
+  background-image: url("../images/icon-menu.svg");
+  max-width: 20px;
+  max-height: 20px;
+}
+
+.navbar-light .navbar-toggler-icon {
+  background-image: url("../images/toggler-icon.svg");
+  max-width: 20px;
+  max-height: 20px;
+}
+
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+  background-color: transparent !important;
+  color: #99C151 !important;
+}
+
+.nav-pills .nav-link {
+  color: #3C3C3C !important;
+  color: 13px;
 }
 
 .jumbotron {
@@ -131,8 +222,37 @@ footer {
   color: #FFFFFF !important;
   background-color: #99C151;
 }
-.btn-success:focus {
+.btn-success:focus, .btn-success:hover {
   background-color: #6f942d !important;
+}
+
+.btn-light {
+  font-weight: bold;
+  font-size: 16px;
+  border-radius: 50px;
+  border: 1px solid #6f942d;
+  padding: 12px 40px;
+  color: #3C3C3C !important;
+  background-color: #FFFFFF;
+}
+.btn-light:focus, .btn-light:hover {
+  background-color: #6f942d !important;
+  color: #FFFFFF !important;
+}
+
+.dropdown-toggle.btn-lightfocus, .dropdown-toggle.btn-light:hover {
+  background-color: #FFFFFF !important;
+  color: #3C3C3C !important;
+}
+
+.btn-default {
+  background-color: #FFFFFF;
+}
+
+.btn-secondary {
+  background-color: #F8F8F8 !important;
+  border: none;
+  border-radius: 0 !important;
 }
 
 .card {
@@ -168,6 +288,154 @@ footer .footer-list li {
 footer .footer-list li a {
   font-weight: 600;
   font-size: 12px;
+}
+
+.accordion-item {
+  background-color: #F3F3F3;
+  border: none;
+}
+
+.accordion-button {
+  color: #3C3C3C;
+  background-color: #E3E3E3;
+  box-shadow: none;
+  border: none;
+  border-radius: 0;
+}
+.accordion-button:focus {
+  box-shadow: none;
+}
+
+.accordion-button:not(.collapsed) {
+  color: #3C3C3C;
+  background-color: #E3E3E3;
+  box-shadow: none;
+  border: none;
+  border-radius: 0;
+}
+
+.accordion-item:first-of-type {
+  border-radius: 0;
+}
+
+.accordion-item:last-of-type .accordion-button.collapsed {
+  border-radius: 0;
+}
+
+.accordion-item:first-of-type .accordion-button {
+  border-radius: 0;
+}
+
+.accordion-button::after {
+  background-image: url("../images/plus-icon.svg");
+}
+
+.accordion-button:not(.collapsed)::after {
+  background-image: url("../images/minus-icon.svg");
+}
+
+.form-check-input {
+  width: 40px;
+  height: 40px;
+  border-radius: 0 !important;
+  border: none;
+}
+
+.form-check-label {
+  font-weight: 500;
+  font-size: 14px;
+  color: #3C3C3C;
+}
+
+.form-label {
+  font-family: "Exo 2", sans-serif;
+  font-weight: normal;
+  font-size: 16px;
+  color: #3C3C3C;
+}
+
+.form-control {
+  color: #3C3C3C;
+  border: none;
+  border-radius: 0;
+  font-size: 14px;
+}
+
+.input-group-text {
+  background-color: #FFFFFF;
+  border: none;
+  border-radius: 0;
+  font-size: 14px;
+}
+
+.bootstrap-select .dropdown-toggle:focus,
+.bootstrap-select > select.mobile-device:focus + .dropdown-toggle {
+  outline: 0 !important;
+  outline-offset: 0 !important;
+}
+
+.bootstrap-select .dropdown-toggle::after {
+  content: "";
+  background-image: url("../images/arrow-down.svg");
+  background-repeat: no-repeat;
+  width: 30px;
+  height: 12px;
+  border-top: none;
+  border-bottom: none;
+  border-left: none;
+  border-right: none;
+}
+
+.dropdown-toggle::after {
+  content: "";
+  background-image: url("../images/arrow-down.svg");
+  background-repeat: no-repeat;
+  width: 30px;
+  height: 12px;
+  border-top: none;
+  border-bottom: none;
+  border-left: none;
+  border-right: none;
+}
+
+.dropdown-menu {
+  border: none;
+}
+
+.btn-check:focus + .btn-secondary,
+.btn-secondary:focus {
+  box-shadow: none !important;
+}
+
+.bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn) {
+  width: 100%;
+}
+
+.dropdown-item.active,
+.dropdown-item:active {
+  background-color: #99C151;
+  box-shadow: none;
+}
+
+.dropdown-toggle.btn-light {
+  border-radius: 0;
+  border: none;
+  padding: 10px 19px;
+}
+
+.dropdown-toggle .dropdown-itemfocus, .dropdown-toggle .dropdown-item:hover {
+  background-color: transparent !important;
+}
+
+.filter-option-inner-inner {
+  font-weight: 500;
+  font-size: 14px;
+  color: #3C3C3C;
+}
+
+.img-style {
+  width: 15px;
+  height: 19px;
 }
 
 /*# sourceMappingURL=style.css.map */

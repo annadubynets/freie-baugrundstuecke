@@ -7,5 +7,12 @@
 <font-face units-per-em="1024" ascent="960" descent="-64" />
 <missing-glyph horiz-adv-x="1024" />
 <glyph unicode="&#x20;" horiz-adv-x="512" d="" />
-<glyph unicode="&#xe900;" glyph-name="map-marker-solid" horiz-adv-x="768" d="M344.536-43.34c-290.596 421.278-344.536 464.514-344.536 619.34 0 212.078 171.922 384 384 384s384-171.922 384-384c0-154.826-53.94-198.062-344.536-619.34-19.070-27.548-59.86-27.546-78.928 0z" />
+<glyph unicode="&#xe900;" horiz-adv-x="1078" d="M0 960h1077.895v-1024h-1077.895v1024z" />
+<glyph unicode="&#xe901;" horiz-adv-x="1078" d="M965.686 448h-853.531v-33.684h853.531z" />
+<glyph unicode="&#xe902;" horiz-adv-x="1078" d="M965.686 481.684h-853.531v-33.684h853.531z" />
+<glyph unicode="&#xe903;" d="M0 960h1024v-1024h-1024v1024z" />
+<glyph unicode="&#xe904;" d="M478.259 853.402v-810.854h33.69v810.854z" />
+<glyph unicode="&#xe905;" d="M512 853.402v-810.854h33.69v810.854z" />
+<glyph unicode="&#xe906;" d="M917.402 448h-810.854v-33.69h810.854z" />
+<glyph unicode="&#xe907;" d="M917.402 481.69h-810.854v-33.69h810.854z" />
 </font></defs></svg>

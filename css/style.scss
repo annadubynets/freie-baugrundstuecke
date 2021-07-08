@@ -7,10 +7,6 @@ body {
     font-weight: normal;
 }
 
-header {
-    padding: 0 99px;
-}
-
 @media (max-width: 768px) {
     header {
         padding: 0;
@@ -22,10 +18,6 @@ header {
 
 footer {
     padding: 68px 0 33px;
-}
-
-.hero {
-    padding: 0 99px;
 }
 
 .nav-style .nav-link {
@@ -83,7 +75,6 @@ footer {
     background-image: url("../images/main-bg.png");
     background-size: cover;
     background-repeat: no-repeat;
-    padding: 85px 105px;
 }
 
 .btn-success {
@@ -253,11 +244,9 @@ footer .footer-list li {
 }
 
 .bootstrap-select .dropdown-toggle::after {
-    content: "";
-    background-image: url("../images/arrow-down.svg");
-    background-repeat: no-repeat;
-    width: 30px;
-    height: 12px;
+    content: "\e908";
+    color: #707070;
+    font-family: 'icomoon';
     border-top: none;
     border-bottom: none;
     border-left: none;
@@ -266,11 +255,9 @@ footer .footer-list li {
 
 .dropdown-toggle {
     &::after {
-        content: "";
-        background-image: url("../images/arrow-down.svg");
-        background-repeat: no-repeat;
-        width: 30px;
-        height: 12px;
+        content: "\e908";
+        color: #707070;
+        font-family: 'icomoon';
         border-top: none;
         border-bottom: none;
         border-left: none;
@@ -279,7 +266,7 @@ footer .footer-list li {
 }
 
 .dropdown-menu {
-    border: none;
+    border: 1px solid #F8F8F8 !important;
 }
 
 .btn-check:focus+.btn-secondary,
@@ -308,6 +295,21 @@ footer .footer-list li {
     &:hover {
         background-color: transparent!important;
     }
+}
+
+.read-more-link {
+    font-weight: 600;
+    font-size: 14px;
+    color: $green-color;
+}
+
+.btn-check:focus+.btn,
+.btn:focus {
+    box-shadow: none!important;
+}
+
+.btn:hover {
+    color: $green-color;
 }
 
 .filter-option-inner-inner {

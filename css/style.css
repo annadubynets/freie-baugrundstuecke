@@ -1,6 +1,8 @@
 @charset "UTF-8";
 @import "./bootstrap.min.css";
 @import "./bootstrap-select.min.css";
+@import "./owl.carousel.default.min.css";
+@import "./owl.carousel.min.css";
 @import "fonts.css";
 h1,
 h2,
@@ -98,8 +100,8 @@ p {
   padding-top: 77px;
 }
 
-.pt-130px {
-  padding-top: 130px;
+.pt-80px {
+  padding-top: 80px;
 }
 
 .pb-85px {
@@ -114,13 +116,14 @@ p {
   margin-bottom: 74px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 992px) {
   h1,
 h2 {
     font-size: 20px;
   }
 
-  h3 {
+  h3,
+h4 {
     font-size: 16px;
   }
 
@@ -135,6 +138,10 @@ h2 {
 body {
   font-family: "Montserrat";
   font-weight: normal;
+}
+
+a {
+  text-decoration: none;
 }
 
 @media (max-width: 768px) {
@@ -258,20 +265,30 @@ footer {
   text-decoration: none;
 }
 
-.carousel-indicators {
-  bottom: -40px;
+.owl-carousel .owl-nav button.owl-prev,
+.owl-carousel .owl-nav button.owl-next {
+  display: none;
 }
-
-.carousel-indicators [data-bs-target] {
-  background-color: #FFFFFF;
-  border: 1px solid #799C3C;
+.owl-carousel .owl-dots .owl-dot span {
   width: 10px;
   height: 10px;
-  border-radius: 50px;
+  background-color: #FFFFFF;
+  border: 1px solid #799C3C;
+  border-radius: 50%;
+  display: inline-block;
+  margin: 0 10px;
 }
-
-.carousel-indicators [data-bs-target].active {
-  background-color: #99C151;
+.owl-carousel .owl-dots {
+  text-align: center;
+  position: relative;
+  top: 20px;
+}
+.owl-carousel .owl-dots .owl-dot.active span {
+  background-color: #799C3C;
+}
+.owl-carousel .owl-item img {
+  display: inline;
+  width: initial;
 }
 
 footer .footer-list li {

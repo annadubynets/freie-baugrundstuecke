@@ -1,10 +1,16 @@
 @import "./bootstrap.min.css";
 @import "./bootstrap-select.min.css";
+@import "./owl.carousel.default.min.css";
+@import "./owl.carousel.min.css";
 @import "fonts.css";
 @import "variables";
 body {
     font-family: 'Montserrat';
     font-weight: normal;
+}
+
+a {
+    text-decoration: none;
 }
 
 @media (max-width: 768px) {
@@ -135,20 +141,32 @@ footer {
     text-decoration: none;
 }
 
-.carousel-indicators {
-    bottom: -40px;
-}
-
-.carousel-indicators [data-bs-target] {
-    background-color: $white-color;
-    border: 1px solid #799C3C;
-    width: 10px;
-    height: 10px;
-    border-radius: 50px;
-}
-
-.carousel-indicators [data-bs-target].active {
-    background-color: $green-color;
+.owl-carousel {
+    .owl-nav button.owl-prev,
+    .owl-nav button.owl-next {
+        display: none;
+    }
+    .owl-dots .owl-dot span {
+        width: 10px;
+        height: 10px;
+        background-color: $white-color;
+        border: 1px solid #799C3C;
+        border-radius: 50%;
+        display: inline-block;
+        margin: 0 10px;
+    }
+    .owl-dots {
+        text-align: center;
+        position: relative;
+        top: 20px;
+    }
+    .owl-dots .owl-dot.active span {
+        background-color: #799C3C;
+    }
+    .owl-item img {
+        display: inline;
+        width: initial;
+    }
 }
 
 footer .footer-list li {

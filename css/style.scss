@@ -321,6 +321,22 @@ footer .footer-list li {
     color: $green-color;
 }
 
+.read-more-link.collapsed:after {
+    content: "\e908";
+    display: inline-block;
+    transform: rotate(0deg);
+    color: $green-color;
+    font-family: 'icomoon';
+}
+
+.read-more-link:after {
+    content: "\e908";
+    display: inline-block;
+    transform: rotate(180deg);
+    color: $green-color;
+    font-family: 'icomoon';
+}
+
 .btn-check:focus+.btn,
 .btn:focus {
     box-shadow: none!important;

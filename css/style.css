@@ -1,8 +1,8 @@
 @charset "UTF-8";
-@import "./bootstrap.min.css";
-@import "./bootstrap-select.min.css";
-@import "./owl.carousel.default.min.css";
-@import "./owl.carousel.min.css";
+@import "./libs/bootstrap.min.css";
+@import "./libs/bootstrap-select.min.css";
+@import "./libs/owl.carousel.min.css";
+@import "./libs/owl.theme.default.min.css";
 @import "fonts.css";
 h1,
 h2,
@@ -135,6 +135,182 @@ h4 {
     margin-bottom: 38px;
   }
 }
+h1,
+h2,
+h3,
+h4,
+h6 {
+  font-family: "Exo 2";
+  font-weight: normal;
+  color: #99C151;
+}
+
+h1 {
+  font-size: 30px;
+}
+
+h2 {
+  font-size: 23px;
+  line-height: 30px;
+}
+
+h3 {
+  font-size: 21px;
+  line-height: 30px;
+}
+
+h4 {
+  font-size: 21px;
+  line-height: 30px;
+}
+
+h6 {
+  font-size: 16px;
+  color: #3C3C3C;
+}
+
+p {
+  font-size: 16px;
+  line-height: 30px;
+  color: #3C3C3C;
+}
+
+.font-weight-600 {
+  font-weight: 600;
+}
+
+.font-weight-500 {
+  font-weight: 500;
+}
+
+.font-size-16 {
+  font-size: 16px;
+}
+
+.font-size-14 {
+  font-size: 14px;
+}
+
+.font-size-12 {
+  font-size: 12px;
+}
+
+.bg-light {
+  background-color: rgba(243, 243, 243, 0.9) !important;
+}
+
+.bg-white {
+  background-color: rgba(255, 255, 255, 0.9) !important;
+}
+
+.bg-body {
+  background-color: #F3F3F3 !important;
+}
+
+.bg-secondary {
+  background-color: #777777 !important;
+}
+
+.bg-warning {
+  background-color: #F0AD4E !important;
+}
+
+.bg-success {
+  background-color: #99C151 !important;
+}
+
+.text-success {
+  color: #99C151 !important;
+}
+
+.text-dark {
+  color: #3C3C3C !important;
+}
+
+.pt-77px {
+  padding-top: 77px;
+}
+
+.pt-80px {
+  padding-top: 80px;
+}
+
+.pb-85px {
+  padding-bottom: 85px;
+}
+
+.mt-80px {
+  margin-top: 80px;
+}
+
+.mb-74px {
+  margin-bottom: 74px;
+}
+
+@media (max-width: 992px) {
+  h1,
+h2 {
+    font-size: 20px;
+  }
+
+  h3,
+h4 {
+    font-size: 16px;
+  }
+
+  p {
+    font-size: 14px;
+  }
+
+  .mb-74px {
+    margin-bottom: 38px;
+  }
+}
+.map-control .map-watermark-cover {
+  background-color: rgba(153, 193, 81, 0.85);
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  z-index: 1000;
+  cursor: pointer;
+}
+.map-control .map-container {
+  width: 100%;
+  height: 100%;
+  border: 1px solid #3c3c3b;
+  min-height: 345px;
+}
+.map-control .map-container .no-popup .leaflet-popup-content-wrapper {
+  box-shadow: none;
+  background: none;
+}
+.map-control .map-container .no-popup .leaflet-popup-tip-container {
+  display: none;
+}
+.map-control .map-container .no-popup .leaflet-popup-content {
+  margin: 0;
+  font-weight: bold;
+}
+.map-control .map-container .leaflet-popup-content {
+  text-align: center;
+  cursor: pointer;
+}
+.map-control .map-container .leaflet-popup {
+  margin: 0;
+}
+.map-control .map-container .leaflet-fullscreen-toolbar-pane {
+  background: transparent;
+  left: 0;
+  right: 0;
+}
+.map-control .map-container .leaflet-fullscreen-footer-pane {
+  bottom: 0;
+  top: auto;
+  left: 0;
+  right: 0;
+}
+
 body {
   font-family: "Montserrat";
   font-weight: normal;

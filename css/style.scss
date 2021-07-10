@@ -1,9 +1,10 @@
-@import "./bootstrap.min.css";
-@import "./bootstrap-select.min.css";
-@import "./owl.carousel.default.min.css";
-@import "./owl.carousel.min.css";
+@import "./libs/bootstrap.min.css";
+@import "./libs/bootstrap-select.min.css";
+@import "./libs/owl.carousel.min.css";
+@import "./libs/owl.theme.default.min.css";
 @import "fonts.css";
 @import "variables";
+@import "map";
 body {
     font-family: 'Montserrat';
     font-weight: normal;

@@ -370,6 +370,12 @@ h4 {
   right: 0;
 }
 
+.search-map {
+  margin-bottom: 15px;
+  width: 100%;
+  height: 400px;
+}
+
 body {
   font-family: "Montserrat";
   font-weight: normal;

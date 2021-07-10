@@ -21,6 +21,10 @@ a {
     footer {
         padding-top: 42px!important;
     }
+    .jumbotron {
+        min-height: 200px;
+        background-position: center;
+    }
 }
 
 footer {
@@ -56,13 +60,13 @@ footer {
 }
 
 .navbar-light.expanded .navbar-toggler-icon {
-    background-image: url("../images/icon-menu.svg");
+    background-image: url("../images/toggler-icon.svg");
     max-width: 20px;
     max-height: 20px;
 }
 
 .navbar-light .navbar-toggler-icon {
-    background-image: url("../images/toggler-icon.svg");
+    background-image: url("../images/icon-menu.svg");
     max-width: 20px;
     max-height: 20px;
 }
@@ -80,8 +84,13 @@ footer {
 
 .jumbotron {
     background-image: url("../images/main-bg.png");
-    background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
+    background-size: cover;
+    .card {
+        margin: 90px;
+        padding: 75px 125px;
+    }
 }
 
 .btn-success {

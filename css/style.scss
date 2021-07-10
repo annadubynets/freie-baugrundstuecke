@@ -130,6 +130,10 @@ footer {
     }
 }
 
+.map-toolbar .btn-light {
+    background-color: $light-color;
+}
+
 .btn-default {
     background-color: $white-color;
 }
@@ -335,7 +339,6 @@ footer .footer-list li {
     content: "\e908";
     display: inline-block;
     transform: rotate(0deg);
-    color: $green-color;
     font-family: 'icomoon';
 }
 
@@ -343,7 +346,6 @@ footer .footer-list li {
     content: "\e908";
     display: inline-block;
     transform: rotate(180deg);
-    color: $green-color;
     font-family: 'icomoon';
 }
 

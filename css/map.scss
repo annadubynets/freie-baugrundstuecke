@@ -34,6 +34,12 @@
             }
         }
 
+        .details-popup {
+            .leaflet-popup-content-wrapper {
+                border-radius: 0;
+            }
+        }
+
         .leaflet-popup-content {
             text-align: center;
             cursor: pointer;
@@ -48,7 +54,7 @@
             left: 0;
             right: 0;
         }
-        
+
         .leaflet-fullscreen-footer-pane {
             bottom: 0;
             top: auto;

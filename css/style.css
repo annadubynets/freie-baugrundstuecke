@@ -348,6 +348,9 @@ h4 {
   margin: 0;
   font-weight: bold;
 }
+.map-control .map-container .details-popup .leaflet-popup-content-wrapper {
+  border-radius: 0;
+}
 .map-control .map-container .leaflet-popup-content {
   text-align: center;
   cursor: pointer;

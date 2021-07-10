@@ -177,12 +177,10 @@
                             <div class="row collapse show justify-content-center" id="map-options-panel">
                                 <div class="col-lg-2 bg-white">
                                     <label>Beschriftung:</label>
-                                    <select class="selectpicker p-2">
-                                        <option>Grundstücksnummern</option>
-                                        <option>Keine Beschriftung</option>
-                                        <option>Hausnummern</option>
-                                        <option>Quadratmeter-Preis in Euro</option>
-                                        <option>Größe in Quadratmetern</option>
+                                    <select class="selectpicker p-2" name='labels'>
+                                        <option value="no">Keine Beschriftung</option>
+                                        <option value="number" selected>Grundstücksnummern</option>
+                                        <option value="size">Größe in Quadratmetern</option>
                                     </select>
                                 </div>
                                 <div class="col-lg-6 bg-white">
@@ -332,9 +330,7 @@
                 $.each(popups, function(key, value) {
                     if (value) {
                         value.setContent(' ');
-                        if (field === 'no') {
-                            value.setContent(' ');
-                        } else {
+                        if (field !== 'no') {
                             value.setContent(labelData[key][field]);
                         }
                     }
@@ -352,7 +348,7 @@
                     weight: '5'
                 });
 
-                var popup = L.popup()
+                var popup = L.popup({className: 'details-popup'})
                 .setLatLng(polys[bsid].getBounds().getCenter())
                 .setContent(`
                     <div class="container-fluid" style="min-width: 200px">
@@ -407,12 +403,6 @@
                 });
             }
 
-
-            // Beschriftung
-            $('input[name="labels"]').on('change', function() {
-                //alert($(this).val());
-                updatePopups($(this).val());
-            });
 
             function isNumeric(n) {
                 return !isNaN(parseFloat(n)) && isFinite(n);
@@ -4225,6 +4215,7 @@
                 }
             });
 
+
             $('.map-watermark-cover').on('click', function(e) {
                 map.toggleFullscreen();
             })
@@ -4251,6 +4242,14 @@
             element = $('#map-footer').detach();
             $(pane).append(element);
             //$(pane).hide();
+
+
+
+            // Beschriftung
+            $('select[name="labels"]').on('change', function() {
+                //alert($(this).val());
+                updatePopups($(this).val());
+            });
 
         });
     </script>

@@ -329,34 +329,69 @@
             }
 
             function showBuildingSite(bsid) {
-                $('#bs_box').html(loader_40);
+                //$('#bs_box').html(loader_40);
 
-                // reset Style for all buildingSites
-                $.each(polys, function(key,value) {
-                    if(value) {
-                        value.setStyle({
-                            weight: '1'
-                        });
-                    }
-                });
+                resetPolygonsSelection();
+                
 
                 // set Style for given buildingSite
                 polys[bsid].setStyle({
                     weight: '5'
                 });
 
-                $('.map_bs').removeClass('info');
-                $('#bs_row_'+bsid).addClass('info');
+                var popup = L.popup()
+                .setLatLng(polys[bsid].getBounds().getCenter())
+                .setContent(`
+                    <div class="container-fluid" style="min-width: 200px">
+                        <div class="row">
+                            <div class="col-12">Flurstück 406</div>
 
-                $.ajax({
-                    url: bsUrl,
-                    data: {
-                        bsid: bsid
-                    },
-                    success: function(html) {
-                        $('#bs_box').html(html);
-                    }
+                            <div class="col-6">Status</div>
+                            <div class="col-6">Verfügbar</div>
+
+                            <div class="col-6">Größe</div>
+                            <div class="col-6">Verfügbar</div>
+                            
+                            <div class="col-6">Preis pro m2</div>
+                            <div class="col-6">Verfügbar</div>
+
+                            <div class="col-6">Straße</div>
+                            <div class="col-6">Verfügbar</div>
+
+                            <div class="col-12">Weitere Vorgaben entnehmen Sie demrechtsgültigen Bebauungsplan.</div>
+                            
+                            <div class="col-12 text-center"><a href="#" class="btn btn-success mb-3">Exposé herunterladen</a></div>
+                        </div>
+                    </div>
+                `
+                ).on('remove', function() {
+                    resetPolygonsSelection();
                 })
+                .openOn(map);
+
+                // $('.map_bs').removeClass('info');
+                // $('#bs_row_'+bsid).addClass('info');
+
+                // $.ajax({
+                //     url: bsUrl,
+                //     data: {
+                //         bsid: bsid
+                //     },
+                //     success: function(html) {
+                //         $('#bs_box').html(html);
+                //     }
+                // })
+            }
+
+            function resetPolygonsSelection() {
+                // reset Style for all buildingSites
+                $.each(polys, function(key, value) {
+                    if(value) {
+                        value.setStyle({
+                            weight: '1'
+                        });
+                    }
+                });
             }
 
 

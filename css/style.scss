@@ -129,14 +129,6 @@ footer {
     }
 }
 
-.dropdown-toggle.btn-light {
-    &focus,
-    &:hover {
-        background-color: $white-color!important;
-        color: $black-color!important;
-    }
-}
-
 .map-toolbar .btn-light {
     background-color: $light-color;
 }
@@ -398,4 +390,16 @@ footer .footer-list li {
     justify-content: center;
     align-items: center;
     text-align: center;
+    &::after {
+        content: "";
+        display: block;
+        background-image: url("../images/close.svg");
+        background-repeat: no-repeat;
+        width: 20px;
+        height: 20px;
+    }
+}
+
+.dropdown.bootstrap-select {
+    padding: 0!important;
 }

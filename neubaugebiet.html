@@ -175,16 +175,16 @@
                     <div class="fullscreen-map-partials d-none">
                         <div class="map-toolbar container" id="map-toolbar">
                             <div class="row collapse show justify-content-center px-107px" id="map-options-panel">
-                                <div class="col-lg-3 bg-white py-4 ps-107px">
-                                    <label>Beschriftung:</label>
+                                <div class="col-lg-3 bg-white py-lg-4 pt-4 pb-0 ps-107px">
+                                    <label class="pb-2">Beschriftung:</label>
                                     <select class="selectpicker p-2" name='labels'>
                                         <option value="no">Keine Beschriftung</option>
                                         <option value="number" selected>Grundstücksnummern</option>
                                         <option value="size">Größe in Quadratmetern</option>
                                     </select>
                                 </div>
-                                <div class="col-lg-6 bg-white py-4 pe-107px">
-                                    <label class="d-block">Legende:</label>
+                                <div class="col-lg-6 bg-white py-lg-4 pt-4 pb-0 ps-107px">
+                                    <label class="d-block pb-2">Legende:</label>
                                     <span class="badge bg-success">Verfügbar</span>
                                     <span class="badge bg-green">Verfügbar (Investor)</span>
                                     <span class="badge bg-yellow text-dark">Verfügbar (geförderter Wohnungsbau)</span>
@@ -198,7 +198,7 @@
                                 </div>
                             </div>
                             <div class="row justify-content-center">
-                                <div class="col-4 bg-white text-center p-2">
+                                <div class="col-lg-4 col-6 bg-white text-center p-2">
                                     <a class="read-more-link text-dark font-size-12 font-weight-500 text-dark" data-bs-toggle="collapse" href="#map-options-panel" role="button" aria-expanded="true" aria-controls="map-options-panel">
                                         Ansicht anpassen
                                     </a>
@@ -213,7 +213,7 @@
                             </div>
                             <div class="d-flex justify-content-end mb-3 d-lg-none d-block">
                                 <a href="#" class="btn btn-success me-4">Jetzt bewerben</a>
-                                <a href="#" class="btn rounded-circle download-btn py-2 px-3"><span class="icon-folder-download1"></span></a>
+                                <a href="#" class="btn rounded-circle download-btn p-3"></a>
                             </div>
                         </div>
                     </div>
@@ -224,7 +224,12 @@
                             <!-- Embeds with JS -->
                         </div>
 
-                        <div class="map-watermark-cover position-absolute"></div>
+                        <div class="map-watermark-cover position-absolute d-flex justify-content-center align-items-center">
+                            <div class="align-self-center text-center">
+                                <img src="images/map-icon.png">
+                                <p class="font-size-18 text-white pt-3">Interaktiven Bebauungsplan öffnen</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

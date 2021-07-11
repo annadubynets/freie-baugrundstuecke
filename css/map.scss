@@ -60,6 +60,12 @@
             left: 0;
             right: 0;
         }
+
+        @media (max-width: 375px) {
+            .leaflet-control-container {
+                display: none;
+            }
+        }
     }
 }
 

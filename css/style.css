@@ -392,6 +392,11 @@ h4 {
   left: 0;
   right: 0;
 }
+@media (max-width: 375px) {
+  .map-control .map-container .leaflet-control-container {
+    display: none;
+  }
+}
 
 .search-map {
   margin-bottom: 15px;

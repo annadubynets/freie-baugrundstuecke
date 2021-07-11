@@ -122,6 +122,13 @@ footer {
     }
 }
 
+.bootstrap-select .dropdown-toggle {
+    &:focus,
+    &:hover {
+        background-color: $light-color!important;
+    }
+}
+
 .dropdown-toggle.btn-light {
     &focus,
     &:hover {
@@ -278,6 +285,7 @@ footer .footer-list li {
 .bootstrap-select .dropdown-toggle::after {
     content: "\e908";
     color: #707070;
+    font-size: 10px;
     font-family: 'icomoon';
     border-top: none;
     border-bottom: none;
@@ -289,6 +297,7 @@ footer .footer-list li {
     &::after {
         content: "\e908";
         color: #707070;
+        font-size: 10px;
         font-family: 'icomoon';
         border-top: none;
         border-bottom: none;
@@ -337,6 +346,7 @@ footer .footer-list li {
 
 .read-more-link.collapsed:after {
     content: "\e908";
+    font-size: 10px;
     display: inline-block;
     transform: rotate(0deg);
     font-family: 'icomoon';
@@ -344,6 +354,7 @@ footer .footer-list li {
 
 .read-more-link:after {
     content: "\e908";
+    font-size: 10px;
     display: inline-block;
     transform: rotate(180deg);
     font-family: 'icomoon';
@@ -367,4 +378,24 @@ footer .footer-list li {
 .img-style {
     width: 15px;
     height: 19px;
+}
+
+.leaflet-popup-content {
+    margin: 30px 20px;
+}
+
+.leaflet-container {
+    font-family: 'Montserrat', sans-serif!important;
+    a {
+        color: $black-color;
+    }
+}
+
+.download-btn {
+    background-color: #F8F8F8;
+    border: 1px solid #6F942D;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }

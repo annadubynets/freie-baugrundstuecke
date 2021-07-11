@@ -156,14 +156,14 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-4">
-                    <div class="font-weight-600 font-size-16 text-success pb-2">Kontaktdaten bei Fragen</div>
-                    <div class="font-weight-600 font-size-14 text-dark">Peter Götz</div>
+                    <div class="fw-bold font-size-16 text-success pb-2">Kontaktdaten bei Fragen</div>
+                    <div class="fw-bold font-size-14 text-dark">Peter Götz</div>
                     <p class="font-size-14">Stadt Weilburg an der Lahn<br> FD 3.4<br> Mauerstrasse 6/8<br> 35781 Weilburg an der Lahn
                     </p>
                     <p class="font-size-14">Tel: 06471/31426<br> Fax: 06471/31477</p>
                     <p class="font-size-14">E-Mail: P.Goetz@weilburg.de<br> Internet: www.weilburg.de</p>
 
-                    <div class="font-weight-600 font-size-16 text-success pb-2">Downloads und Links</div>
+                    <div class="fw-bold font-size-16 text-success pb-2">Downloads und Links</div>
                     <a href="#" class="d-block font-size-14 text-dark pb-2"><span class="pe-2"><img src="images/copy.svg"></span>B-Plan "Auf der Seelbach" (PDF)</a>
                     <a href="#" class="d-block font-size-14 text-dark"><span class="pe-2"><img src="images/copy.svg"></span>Netzanschluss-Broschüre Stadtwerke Weilburg (PDF)</a>
                 </div>
@@ -174,8 +174,8 @@
                     -->
                     <div class="fullscreen-map-partials d-none">
                         <div class="map-toolbar container" id="map-toolbar">
-                            <div class="row collapse show justify-content-center" id="map-options-panel">
-                                <div class="col-lg-2 bg-white">
+                            <div class="row collapse show justify-content-center px-107px" id="map-options-panel">
+                                <div class="col-lg-3 bg-white py-4 ps-107px">
                                     <label>Beschriftung:</label>
                                     <select class="selectpicker p-2" name='labels'>
                                         <option value="no">Keine Beschriftung</option>
@@ -183,11 +183,11 @@
                                         <option value="size">Größe in Quadratmetern</option>
                                     </select>
                                 </div>
-                                <div class="col-lg-6 bg-white">
+                                <div class="col-lg-6 bg-white py-4 pe-107px">
                                     <label class="d-block">Legende:</label>
                                     <span class="badge bg-success">Verfügbar</span>
                                     <span class="badge bg-green">Verfügbar (Investor)</span>
-                                    <span class="badge bg-yellow">Verfügbar (geförderter Wohnungsbau)</span>
+                                    <span class="badge bg-yellow text-dark">Verfügbar (geförderter Wohnungsbau)</span>
                                     <span class="badge bg-warning">Reserviert</span>
                                     <span class="badge bg-danger">Verkauft</span>
                                     <span class="badge bg-secondary">Nicht verfügbar</span>
@@ -206,10 +206,14 @@
                             </div>
                         </div>
 
-                        <div class="map-footer container" id="map-footer">
-                            <div class="d-flex justify-content-end mb-3">
-                                <a href="#" class="btn btn-light">Bebauungsplan herunterladen</a>
+                        <div class="map-footer container d-flex justify-content-end" id="map-footer">
+                            <div class="d-flex justify-content-end mb-3 d-lg-block d-none">
+                                <a href="#" class="btn btn-light me-4">Bebauungsplan herunterladen</a>
                                 <a href="#" class="btn btn-success">Jetzt online bewerben</a>
+                            </div>
+                            <div class="d-flex justify-content-end mb-3 d-lg-none d-block">
+                                <a href="#" class="btn btn-success me-4">Jetzt bewerben</a>
+                                <a href="#" class="btn rounded-circle download-btn py-2 px-3"><span class="icon-folder-download1"></span></a>
                             </div>
                         </div>
                     </div>
@@ -231,7 +235,7 @@
         <div class="container">
             <div class="row mb-74px">
                 <div class="col-lg-6 mb-lg-0 mb-5">
-                    <p class="font-size-12 font-weight-600">FreieBaugrundstuecke.de ist eine Entwicklung der Coptercam AG
+                    <p class="font-size-12 fw-bold">FreieBaugrundstuecke.de ist eine Entwicklung der Coptercam AG
                     </p>
                     <img src="images/footer-logo.svg" class="d-lg-block d-none">
                     <img src="images/footer-logo-mobile.svg" class="d-lg-none d-block">
@@ -257,7 +261,7 @@
             </div>
             <div class="row">
                 <div class="col-lg-6 order-lg-0 order-1">
-                    <div class="font-size-12 font-weight-600">© 2021 – freiebaugrundstuecke.de
+                    <div class="font-size-12 fw-bold">© 2021 – freiebaugrundstuecke.de
                     </div>
                 </div>
                 <div class="col-lg-6 text-lg-end text-start order-lg-1 order-0">
@@ -277,7 +281,6 @@
     <script src="js/libs/bootstrap-select.min.js"></script>
     <script src="js/libs/leaflet-1.7.1/leaflet-src.js"></script>
     <script src='https://api.mapbox.com/mapbox.js/plugins/leaflet-fullscreen/v1.0.1/Leaflet.fullscreen.min.js'></script>
-
 
     <script src="js/scripts.js"></script>
 
@@ -341,42 +344,49 @@
                 //$('#bs_box').html(loader_40);
 
                 resetPolygonsSelection();
-                
+
 
                 // set Style for given buildingSite
                 polys[bsid].setStyle({
                     weight: '5'
                 });
 
-                var popup = L.popup({className: 'details-popup'})
-                .setLatLng(polys[bsid].getBounds().getCenter())
-                .setContent(`
+                var popup = L.popup({
+                        className: 'details-popup'
+                    })
+                    .setLatLng(polys[bsid].getBounds().getCenter())
+                    .setContent(`
                     <div class="container-fluid" style="min-width: 200px">
                         <div class="row">
-                            <div class="col-12">Flurstück 406</div>
+                            <div class="col-12 text-start pb-2 px-0">
+                                <h6 class="text-success">Flurstück 406</h6>
+                            </div>
 
-                            <div class="col-6">Status</div>
-                            <div class="col-6">Verfügbar</div>
+                            <div class="col-6 text-start font-size-14 fw-bold pb-2 px-0">Status</div>
+                            <div class="col-6 text-start px-0">
+                                <span class="badge bg-success">Verfügbar</span>
+                            </div>
 
-                            <div class="col-6">Größe</div>
-                            <div class="col-6">Verfügbar</div>
+                            <div class="col-6 text-start font-size-14 fw-bold pb-2 px-0">Größe</div>
+                            <div class="col-6 text-start font-size-14 font-weight-500 px-0">ca. 433m2</div>
                             
-                            <div class="col-6">Preis pro m2</div>
-                            <div class="col-6">Verfügbar</div>
+                            <div class="col-6 text-start font-size-14 fw-bold pb-2 px-0">Preis pro m2</div>
+                            <div class="col-6 text-start font-weight-500 px-0">180,00 €
+</div>
 
-                            <div class="col-6">Straße</div>
-                            <div class="col-6">Verfügbar</div>
+                            <div class="col-6 text-start font-size-14 fw-bold pb-2 px-0">Straße</div>
+                            <div class="col-6 text-start font-weight-500 px-0">Horster Strasse</div>
 
-                            <div class="col-12">Weitere Vorgaben entnehmen Sie demrechtsgültigen Bebauungsplan.</div>
+                            <div class="col-12 text-start font-size-12 font-weight-500 fst-italic pb-5 px-0">Weitere Vorgaben entnehmen Sie dem
+rechtsgültigen Bebauungsplan.</div>
                             
-                            <div class="col-12 text-center"><a href="#" class="btn btn-success mb-3">Exposé herunterladen</a></div>
+                            <div class="col-12 text-center px-0"><a href="#" class="btn btn-success">Exposé herunterladen</a></div>
                         </div>
                     </div>
-                `
-                ).on('remove', function() {
-                    resetPolygonsSelection();
-                })
-                .openOn(map);
+                `).on('remove', function() {
+                        resetPolygonsSelection();
+                    })
+                    .openOn(map);
 
                 // $('.map_bs').removeClass('info');
                 // $('#bs_row_'+bsid).addClass('info');
@@ -395,7 +405,7 @@
             function resetPolygonsSelection() {
                 // reset Style for all buildingSites
                 $.each(polys, function(key, value) {
-                    if(value) {
+                    if (value) {
                         value.setStyle({
                             weight: '1'
                         });

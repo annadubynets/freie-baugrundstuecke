@@ -198,8 +198,8 @@
 
                     <h2 id='rf_result'>3 Suchergebnisse</h2>
 
-                    <div class="font-weight-600 font-size-16 text-dark pb-5">Entdecken Sie hier Ihre 3 Ergebnisse ihrer Suche.</div>
-                    
+                    <div class="fw-bold font-size-16 text-dark pb-5">Entdecken Sie hier Ihre 3 Ergebnisse ihrer Suche.</div>
+
                     <div class="card bg-body mb-5 building-area-item" data-href="neubaugebiet.html" data-title="Weilburg-Kubach" data-lat="50.25140355" data-lng="8.06373954">
                         <a href="neubaugebiet.html">
                             <div class="row">
@@ -222,7 +222,7 @@
                         </a>
                     </div>
 
-                    
+
                     <div class="card bg-body mb-5 building-area-item" data-href="neubaugebiet.html" data-title="Haintchen" data-lat="51.08142558" data-lng="6.29016103">
                         <a href="neubaugebiet.html">
                             <div class="row">
@@ -245,7 +245,7 @@
                         </a>
                     </div>
 
-                    
+
                     <div class="card bg-body building-area-item" data-href="neubaugebiet.html" data-title="Hausen" data-lat="50.23816448" data-lng="8.01882257">
                         <a href="neubaugebiet.html">
                             <div class="row">
@@ -279,7 +279,7 @@
             <div class="row justify-content-center">
                 <div class="col-lg-12 text-center">
                     <h1 class="pb-1">Unsere Referenzen</h1>
-                    <p class="font-weight-600">Städte und Kommunen die mit uns zusammenarbeiten.</p>
+                    <p class="fw-bold">Städte und Kommunen die mit uns zusammenarbeiten.</p>
                     <div class="owl-carousel owl-theme">
                         <div class="item active">
                             <div class="col">
@@ -342,7 +342,7 @@
         <div class="container">
             <div class="row mb-74px">
                 <div class="col-lg-6 mb-lg-0 mb-5">
-                    <p class="font-size-12 font-weight-600">FreieBaugrundstuecke.de ist eine Entwicklung der Coptercam AG
+                    <p class="font-size-12 fw-bold">FreieBaugrundstuecke.de ist eine Entwicklung der Coptercam AG
                     </p>
                     <img src="images/footer-logo.svg" class="d-lg-block d-none">
                     <img src="images/footer-logo-mobile.svg" class="d-lg-none d-block">
@@ -368,7 +368,7 @@
             </div>
             <div class="row">
                 <div class="col-lg-6 order-lg-0 order-1">
-                    <div class="font-size-12 font-weight-600">© 2021 – freiebaugrundstuecke.de
+                    <div class="font-size-12 fw-bold">© 2021 – freiebaugrundstuecke.de
                     </div>
                 </div>
                 <div class="col-lg-6 text-lg-end text-start order-lg-1 order-0">
@@ -390,9 +390,8 @@
 
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC1bOnrJtigcVEclg3-SNcB9HqaUQfMO4Y&libraries=places"></script>
     <script type="text/javascript">
-
         var map;
-        var markers=[];
+        var markers = [];
 
         function initMap() {
             map = new google.maps.Map(document.getElementById('rf_map'), {
@@ -405,26 +404,28 @@
         }
 
         function refreshMap() {
-            for(var i=0;i<markers.length;i++) {
+            for (var i = 0; i < markers.length; i++) {
                 markers[i].setMap(null);
             }
 
             var bounds = new google.maps.LatLngBounds();
-            var infowindow = new google.maps.InfoWindow({content: ""});
+            var infowindow = new google.maps.InfoWindow({
+                content: ""
+            });
 
-            $('.building-area-item').each(function(i,el) {
-                var title=$(el).data('title');
-                var lat=$(el).data('lat');
-                var lng=$(el).data('lng');
-                var link=$(el).data('href');
+            $('.building-area-item').each(function(i, el) {
+                var title = $(el).data('title');
+                var lat = $(el).data('lat');
+                var lng = $(el).data('lng');
+                var link = $(el).data('href');
 
-                if(title && lat && lng) {
+                if (title && lat && lng) {
                     $('#rf_map').show();
 
-                    var latLng=new google.maps.LatLng(lat,lng);
+                    var latLng = new google.maps.LatLng(lat, lng);
                     bounds.extend(latLng);
 
-                    var marker=new google.maps.Marker({
+                    var marker = new google.maps.Marker({
                         position: latLng,
                         map: map,
                         title: title
@@ -432,22 +433,22 @@
                     markers.push(marker);
 
                     google.maps.event.addListener(marker, "click", function() {
-                        infowindow.setContent('<strong>'+title+'</strong><br /><a href="'+link+'" class="btn btn-default btn-xs">Details ansehen</a>');
-                        infowindow.open(map,marker);
+                        infowindow.setContent('<strong>' + title + '</strong><br /><a href="' + link + '" class="btn btn-default btn-xs">Details ansehen</a>');
+                        infowindow.open(map, marker);
                     });
                 }
 
             });
 
             map.fitBounds(bounds);
-            var listener=google.maps.event.addListener(map, "idle", function() {
+            var listener = google.maps.event.addListener(map, "idle", function() {
                 if (map.getZoom() > 14) map.setZoom(14);
                 google.maps.event.removeListener(listener);
             });
         }
 
         $(document).ready(function() {
-        
+
             initMap();
             refreshMap();
         });

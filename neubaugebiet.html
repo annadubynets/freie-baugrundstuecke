@@ -224,7 +224,7 @@
                             <!-- Embeds with JS -->
                         </div>
 
-                        <!-- <div class="map-watermark-cover position-absolute"></div> -->
+                        <div class="map-watermark-cover position-absolute"></div>
                     </div>
                 </div>
             </div>
@@ -351,8 +351,11 @@
                     weight: '5'
                 });
 
+                var toolbar = $('.leaflet-fullscreen-toolbar-pane');
+                var popupPaddingTop = toolbar.is(':visible') ? toolbar.height() + 5 : 5;
                 var popup = L.popup({
-                        className: 'details-popup'
+                        className: 'details-popup',
+                        autoPanPadding: [5, popupPaddingTop],
                     })
                     .setLatLng(polys[bsid].getBounds().getCenter())
                     .setContent(`
@@ -4246,18 +4249,17 @@ rechtsgültigen Bebauungsplan.</div>
             var pane = map.createPane('fullscreen-toolbar', $('.map-container')[0]);
             var element = $('#map-toolbar').detach();
             $(pane).append(element);
-            //$(pane).hide();
+            $(pane).hide();
 
             pane = map.createPane('fullscreen-footer', $('.map-container')[0]);
             element = $('#map-footer').detach();
             $(pane).append(element);
-            //$(pane).hide();
+            $(pane).hide();
 
 
 
             // Beschriftung
             $('select[name="labels"]').on('change', function() {
-                //alert($(this).val());
                 updatePopups($(this).val());
             });
 

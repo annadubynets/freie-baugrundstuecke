@@ -358,7 +358,6 @@ h4 {
 .map-control .map-container {
   width: 100%;
   height: 100%;
-  border: 1px solid #3c3c3b;
   min-height: 345px;
 }
 .map-control .map-container .no-popup .leaflet-popup-content-wrapper {

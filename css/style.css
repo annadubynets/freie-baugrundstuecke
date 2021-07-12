@@ -846,4 +846,12 @@ footer .footer-list li a {
   border-radius: 0;
 }
 
+.expanded-navbar-toggler {
+  bottom: 26px;
+  background-image: url("../images/toggler-icon.png");
+  background-repeat: no-repeat;
+  width: 20px;
+  height: 20px;
+}
+
 /*# sourceMappingURL=style.css.map */

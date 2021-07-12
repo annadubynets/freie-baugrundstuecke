@@ -403,13 +403,13 @@ h4 {
   right: -72px;
   border-top-left-radius: 157px;
   border-width: 0 0px 1px 0;
-  box-shadow: -20px -81px 0 white;
+  box-shadow: -16px -81px 0 white;
 }
 .map-control .map-container .leaflet-fullscreen-toolbar-pane .toolbar-anchor::before {
   left: -72px;
   border-top-right-radius: 157px;
   border-width: 0 0px 1px 0;
-  box-shadow: 20px -81px 0 white;
+  box-shadow: 16px -81px 0 white;
 }
 .map-control .map-container .leaflet-fullscreen-toolbar-pane .toolbar-anchor::after, .map-control .map-container .leaflet-fullscreen-toolbar-pane .toolbar-anchor::before {
   position: absolute;

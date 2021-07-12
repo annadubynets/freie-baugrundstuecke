@@ -2,6 +2,12 @@
 
 .map-control {
 
+
+
+    .map-toolbar {
+        pointer-events: auto;
+    }
+
     .map-watermark-cover {
         background-color: rgba(153,193,81,.85);
         left: 0;
@@ -53,25 +59,26 @@
             left: 0;
             right: 0;
             z-index: 1000;
+            pointer-events: none;
 
             .toolbar-anchor {
                 position: relative;
-                border-bottom-left-radius: 37px;
-                border-bottom-right-radius: 37px;
+                border-bottom-left-radius: 43px;
+                border-bottom-right-radius: 43px;
             }
 
             .toolbar-anchor::after {
-                right: -72px;
-                border-top-left-radius: 157px;
+                right: -112px;
+                border-top-left-radius: 33px;
                 border-width: 0 0px 1px 0;
-                box-shadow: -16px -81px 0 white;
+                box-shadow: -89px -89px 0 white;
             }
 
             .toolbar-anchor::before {
-                left: -72px;
-                border-top-right-radius: 157px;
+                left: -112px;
+                border-top-right-radius: 33px;
                 border-width: 0 0px 1px 0;
-                box-shadow: 16px -81px 0 white;
+                box-shadow: 89px -89px 0 white;
             }
 
             .toolbar-anchor::after, .toolbar-anchor::before {

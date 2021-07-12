@@ -810,7 +810,7 @@ footer .footer-list li a {
   color: #3C3C3C;
 }
 
-.download-btn {
+.exit-fullscreen-btn {
   background-color: #F8F8F8;
   border: 1px solid #6F942D;
   display: flex;
@@ -818,13 +818,13 @@ footer .footer-list li a {
   align-items: center;
   text-align: center;
 }
-.download-btn::after {
+.exit-fullscreen-btn::after {
   content: "";
   display: block;
   background-image: url("../images/close.svg");
   background-repeat: no-repeat;
-  width: 20px;
-  height: 20px;
+  width: 19px;
+  height: 18px;
 }
 
 .dropdown.bootstrap-select {

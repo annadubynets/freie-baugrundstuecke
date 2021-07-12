@@ -204,7 +204,7 @@
                             </div>
                             <div class="d-flex justify-content-between mb-3 d-lg-none d-block">
                                 <a href="#" class="btn btn-success me-3 w-100">Jetzt bewerben</a>
-                                <a href="#" class="btn rounded-circle download-btn p-3"></a>
+                                <a href="#" class="btn rounded-circle exit-fullscreen-btn p-3"></a>
                             </div>
                         </div>
                     </div>
@@ -214,12 +214,12 @@
                             <!-- Embeds with JS -->
                         </div>
 
-                        <!-- <div class="map-watermark-cover position-absolute d-flex justify-content-center align-items-center">
+                        <div class="map-watermark-cover position-absolute d-flex justify-content-center align-items-center">
                             <div class="align-self-center text-center">
                                 <img src="images/map-icon.png">
                                 <p class="font-size-18 text-white pt-3">Interaktiven Bebauungsplan öffnen</p>
                             </div>
-                        </div> -->
+                        </div>
                     </div>
                 </div>
             </div>
@@ -4241,12 +4241,12 @@ rechtsgültigen Bebauungsplan.</div>
             var pane = map.createPane('fullscreen-toolbar', $('.map-container')[0]);
             var element = $('#map-toolbar').detach();
             $(pane).append(element);
-            //$(pane).hide();
+            $(pane).hide();
 
             pane = map.createPane('fullscreen-footer', $('.map-container')[0]);
             element = $('#map-footer').detach();
             $(pane).append(element);
-            //$(pane).hide();
+            $(pane).hide();
 
 
 
@@ -4255,6 +4255,10 @@ rechtsgültigen Bebauungsplan.</div>
                 updatePopups($(this).val());
             });
 
+            $('.exit-fullscreen-btn').on('click', function(e) {
+                e.preventDefault();
+                map.toggleFullscreen();
+            });
         });
     </script>
 

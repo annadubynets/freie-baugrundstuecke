@@ -2,6 +2,19 @@ $(function() {
     if ($('select').length > 0) {
         $('select').selectpicker();
     }
+
+    $('.navbar-collapse').on('show.bs.collapse', function () {
+        $('.navbar-collapse').addClass('expanded');
+    });
+   
+    $('.navbar-collapse').on('hidden.bs.collapse', function () {
+        $('.navbar-collapse').removeClass('expanded');
+    });
+
+    $('.expanded-navbar-toggler').on('click', function(e) {
+        e.preventDefault();
+        $('.navbar-toggler').trigger('click')
+    })
 })
 
 if ($('.products .owl-carousel').length > 0) {

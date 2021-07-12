@@ -5,10 +5,12 @@ $(function() {
 
     $('.navbar-collapse').on('show.bs.collapse', function () {
         $('.navbar-collapse').addClass('expanded');
+        $('html').addClass('menu-expanded')
     });
    
     $('.navbar-collapse').on('hidden.bs.collapse', function () {
         $('.navbar-collapse').removeClass('expanded');
+        $('html').removeClass('menu-expanded')
     });
 
     $('.expanded-navbar-toggler').on('click', function(e) {

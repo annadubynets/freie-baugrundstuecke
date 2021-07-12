@@ -90,10 +90,21 @@ footer {
         position: fixed;
         top: 0;
         left: 0;
-        right: 0;
-        height: 100vh!important;
+        bottom: 0;
+        min-width: 100vw;
+        width: 100vw;
+        min-height: 100vh!important;
         background-color: white;
         z-index: 10000;
+        overflow-y: scroll;
+    }
+
+    html.menu-expanded {
+        overflow: hidden;
+
+        body {
+            overflow: hidden;
+        }
     }
 }
 
@@ -428,12 +439,4 @@ footer .footer-list li {
 
 .badge {
     border-radius: 0;
-}
-
-.expanded-navbar-toggler {
-    bottom: 26px;
-    background-image: url("../images/toggler-icon.png");
-    background-repeat: no-repeat;
-    width: 20px;
-    height: 20px;
 }

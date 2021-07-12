@@ -827,4 +827,8 @@ footer .footer-list li a {
   padding: 0 !important;
 }
 
+.badge {
+  border-radius: 0;
+}
+
 /*# sourceMappingURL=style.css.map */

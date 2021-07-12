@@ -164,7 +164,7 @@
                         and inserts it into map. If this way is not convenient, you can construct it in JS
                     -->
                     <div class="fullscreen-map-partials d-none">
-                        <div class="map-toolbar container" id="map-toolbar">
+                        <div class="map-toolbar container px-0" id="map-toolbar">
                             <div class="row collapse show justify-content-center px-107px" id="map-options-panel">
                                 <div class="col-lg-3 bg-white py-lg-4 pt-4 pb-0 ps-107px">
                                     <label class="pb-2">Beschriftung:</label>
@@ -189,7 +189,7 @@
                                 </div>
                             </div>
                             <div class="row justify-content-center">
-                                <div class="col-lg-4 col-6 bg-white text-center p-2">
+                                <div class="col-lg-4 col-8 bg-white text-center p-2 toolbar-anchor">
                                     <a class="read-more-link text-dark font-size-12 font-weight-500 text-dark" data-bs-toggle="collapse" href="#map-options-panel" role="button" aria-expanded="true" aria-controls="map-options-panel">
                                         Ansicht anpassen
                                     </a>
@@ -214,12 +214,12 @@
                             <!-- Embeds with JS -->
                         </div>
 
-                        <div class="map-watermark-cover position-absolute d-flex justify-content-center align-items-center">
+                        <!-- <div class="map-watermark-cover position-absolute d-flex justify-content-center align-items-center">
                             <div class="align-self-center text-center">
                                 <img src="images/map-icon.png">
                                 <p class="font-size-18 text-white pt-3">Interaktiven Bebauungsplan öffnen</p>
                             </div>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
             </div>
@@ -385,9 +385,6 @@ rechtsgültigen Bebauungsplan.</div>
                         resetPolygonsSelection();
                     })
                     .openOn(map);
-
-                // $('.map_bs').removeClass('info');
-                // $('#bs_row_'+bsid).addClass('info');
 
                 // $.ajax({
                 //     url: bsUrl,
@@ -4244,12 +4241,12 @@ rechtsgültigen Bebauungsplan.</div>
             var pane = map.createPane('fullscreen-toolbar', $('.map-container')[0]);
             var element = $('#map-toolbar').detach();
             $(pane).append(element);
-            $(pane).hide();
+            //$(pane).hide();
 
             pane = map.createPane('fullscreen-footer', $('.map-container')[0]);
             element = $('#map-footer').detach();
             $(pane).append(element);
-            $(pane).hide();
+            //$(pane).hide();
 
 
 

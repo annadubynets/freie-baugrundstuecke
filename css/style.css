@@ -421,7 +421,7 @@ a {
   text-decoration: none;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 992px) {
   header {
     padding: 0;
   }
@@ -433,6 +433,18 @@ a {
   .jumbotron {
     min-height: 200px;
     background-position: center;
+  }
+}
+@media (min-width: 992px) {
+  .jumbotron .card {
+    margin: 45px;
+    padding: 50px;
+  }
+}
+@media (min-width: 1900px) {
+  .jumbotron .card {
+    margin: 90px;
+    padding: 75px 125px;
   }
 }
 footer {
@@ -493,10 +505,6 @@ footer {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-}
-.jumbotron .card {
-  margin: 90px;
-  padding: 75px 125px;
 }
 
 .btn-success {

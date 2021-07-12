@@ -393,6 +393,7 @@ h4 {
   background: transparent;
   left: 0;
   right: 0;
+  z-index: 1000;
 }
 .map-control .map-container .leaflet-fullscreen-toolbar-pane .toolbar-anchor {
   position: relative;
@@ -424,11 +425,6 @@ h4 {
   top: auto;
   left: 0;
   right: 0;
-}
-@media (max-width: 375px) {
-  .map-control .map-container .leaflet-control-container {
-    display: none;
-  }
 }
 
 .search-map {

@@ -4247,11 +4247,13 @@ rechtsgültigen Bebauungsplan.</div>
                     console.log('entered fullscreen');
                     $(map.getPane('fullscreen-toolbar')).show();
                     $(map.getPane('fullscreen-footer')).show();
+                    $(".leaflet-control-container").show();
 
                 } else {
                     console.log('exited fullscreen');
                     $(map.getPane('fullscreen-toolbar')).hide();
                     $(map.getPane('fullscreen-footer')).hide();
+                    $(".leaflet-control-container").hide();
                 }
             });
 
@@ -4265,7 +4267,7 @@ rechtsgültigen Bebauungsplan.</div>
             $(pane).append(element);
             $(pane).hide();
 
-
+            $(".leaflet-control-container").hide();
 
             // Beschriftung
             $('select[name="labels"]').on('change', function() {

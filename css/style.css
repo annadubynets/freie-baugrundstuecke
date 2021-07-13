@@ -363,7 +363,7 @@ h4 {
   right: 0;
   bottom: 0;
   top: 0;
-  z-index: 1000;
+  z-index: 999;
   cursor: pointer;
 }
 .map-control .map-container {
@@ -416,7 +416,8 @@ h4 {
   border-width: 0 0px 1px 0;
   box-shadow: 89px -89px 0 white;
 }
-.map-control .map-container .leaflet-fullscreen-toolbar-pane .toolbar-anchor::after, .map-control .map-container .leaflet-fullscreen-toolbar-pane .toolbar-anchor::before {
+.map-control .map-container .leaflet-fullscreen-toolbar-pane .toolbar-anchor::after,
+.map-control .map-container .leaflet-fullscreen-toolbar-pane .toolbar-anchor::before {
   position: absolute;
   top: 0px;
   width: 120px;
@@ -751,7 +752,6 @@ footer .footer-list li a {
 
 .dropdown-menu {
   border: 1px solid #F8F8F8 !important;
-  z-index: 1000000;
 }
 
 .btn-check:focus + .btn-secondary,

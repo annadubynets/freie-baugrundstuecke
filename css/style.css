@@ -424,6 +424,7 @@ h4 {
   height: 107px;
   content: " ";
   z-index: -1;
+  pointer-events: none;
 }
 .map-control .map-container .leaflet-fullscreen-footer-pane {
   bottom: 0;

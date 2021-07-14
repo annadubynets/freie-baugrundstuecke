@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
-    <link rel="stylesheet" href="css/libs/leaflet-1.7.1/leaflet.css">
+    <link rel="stylesheet" href="css/libs/leaflet-1.8-dev/leaflet.css">
     <link rel="stylesheet" href="css/libs/leaflet-fullscreen/leaflet.fullscreen.css" />
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -185,7 +185,7 @@
                             <div class="row collapse show justify-content-center px-107px" id="map-options-panel">
                                 <div class="col-lg-3 bg-white py-lg-4 pt-4 pb-0 ps-107px">
                                     <label class="pb-2">Beschriftung:</label>
-                                    <select class="selectpicker p-2" name='labels'>
+                                    <select class="selectpicker p-2" name='labels' id="labels-filter">
                                         <option value="no">Keine Beschriftung</option>
                                         <option value="number" selected>Grundstücksnummern</option>
                                         <option value="size">Größe in Quadratmetern</option>
@@ -291,7 +291,7 @@
     <script src="js/libs/owl.carousel.min.js"></script>
     <script src="js/libs/bootstrap.bundle.min.js"></script>
     <script src="js/libs/bootstrap-select.min.js"></script>
-    <script src="js/libs/leaflet-1.7.1/leaflet.js"></script>
+    <script src="js/libs/leaflet-1.8-dev/leaflet.js"></script>
     <script src='js/libs/leaflet-fullscreen/Leaflet.fullscreen.min.js'></script>
 
     <script src="js/scripts.js"></script>
@@ -4249,7 +4249,6 @@ rechtsgültigen Bebauungsplan.</div>
                     $(map.getPane('fullscreen-toolbar')).show();
                     $(map.getPane('fullscreen-footer')).show();
                     $(".leaflet-control-container").show();
-
                 } else {
                     console.log('exited fullscreen');
                     $(map.getPane('fullscreen-toolbar')).hide();
@@ -4279,6 +4278,30 @@ rechtsgültigen Bebauungsplan.</div>
                 e.preventDefault();
                 map.toggleFullscreen();
             });
+
+            // let timer = false;
+            // let lastClick = Date.now();
+            // $('.dropdown-toggle').on('click', function(e) { 
+            //     e.preventDefault();
+
+            //     console.log(e)
+            //     const timeDiffMS = Date.now() - lastClick;
+            //     console.log(e, timeDiffMS)
+            //     if (timeDiffMS < 100) {
+            //         //if (e && e.originalEvent && e.originalEvent._simulated) {
+            //             // this event map simulated in safari or mobile browser
+            //             clearTimeout(timer);
+            //             timer = setTimeout(function() {
+            //                 if (!$(e.delegateTarget).hasClass('show')) {
+            //                     $('.selectpicker').selectpicker('open');
+            //                 }
+            //                 timer = false;
+            //             }, 100)
+            //         //}
+            //     }
+
+            //     lastClick = Date.now();
+            // });
         });
     </script>
 

@@ -135,14 +135,6 @@ p {
     margin-bottom: 74px;
 }
 
-.ps-107px {
-    padding-left: 107px;
-}
-
-.pe-107px {
-    padding-right: 107px;
-}
-
 @media (max-width: 992px) {
     h1,
     h2 {
@@ -157,14 +149,5 @@ p {
     }
     .mb-74px {
         margin-bottom: 38px;
-    }
-}
-
-@media (max-width: 1200px) {
-    .ps-107px {
-        padding-left: 24px;
-    }
-    .pe-107px {
-        padding-right: 24px;
     }
 }

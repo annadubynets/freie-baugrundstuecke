@@ -136,14 +136,6 @@ p {
   margin-bottom: 74px;
 }
 
-.ps-107px {
-  padding-left: 107px;
-}
-
-.pe-107px {
-  padding-right: 107px;
-}
-
 @media (max-width: 992px) {
   h1,
 h2 {
@@ -161,15 +153,6 @@ h4 {
 
   .mb-74px {
     margin-bottom: 38px;
-  }
-}
-@media (max-width: 1200px) {
-  .ps-107px {
-    padding-left: 24px;
-  }
-
-  .pe-107px {
-    padding-right: 24px;
   }
 }
 h1,
@@ -304,14 +287,6 @@ p {
   margin-bottom: 74px;
 }
 
-.ps-107px {
-  padding-left: 107px;
-}
-
-.pe-107px {
-  padding-right: 107px;
-}
-
 @media (max-width: 992px) {
   h1,
 h2 {
@@ -329,15 +304,6 @@ h4 {
 
   .mb-74px {
     margin-bottom: 38px;
-  }
-}
-@media (max-width: 1200px) {
-  .ps-107px {
-    padding-left: 24px;
-  }
-
-  .pe-107px {
-    padding-right: 24px;
   }
 }
 .map-control .map-toolbar {
@@ -737,6 +703,7 @@ footer .footer-list li a {
   border-bottom: none;
   border-left: none;
   border-right: none;
+  align-self: center;
 }
 
 .dropdown-menu {

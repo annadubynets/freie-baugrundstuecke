@@ -17,6 +17,7 @@
         height: 100%;
         min-height: 345px;
         .no-popup {
+            pointer-events: none;
             .leaflet-popup-content-wrapper {
                 box-shadow: none;
                 background: none;
@@ -78,8 +79,14 @@
         .leaflet-fullscreen-footer-pane {
             bottom: 0;
             top: auto;
-            left: 0;
+            left: auto;
             right: 0;
+        }
+
+        @media (max-width: 575px) {
+            .leaflet-fullscreen-footer-pane {
+                left: 0;
+            }
         }
     }
 }

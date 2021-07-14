@@ -339,6 +339,9 @@ h4 {
   height: 100%;
   min-height: 345px;
 }
+.map-control .map-container .no-popup {
+  pointer-events: none;
+}
 .map-control .map-container .no-popup .leaflet-popup-content-wrapper {
   box-shadow: none;
   background: none;
@@ -397,8 +400,13 @@ h4 {
 .map-control .map-container .leaflet-fullscreen-footer-pane {
   bottom: 0;
   top: auto;
-  left: 0;
+  left: auto;
   right: 0;
+}
+@media (max-width: 575px) {
+  .map-control .map-container .leaflet-fullscreen-footer-pane {
+    left: 0;
+  }
 }
 
 .search-map {

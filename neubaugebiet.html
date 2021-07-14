@@ -8,7 +8,7 @@
     <title>Document</title>
 
     <link rel="stylesheet" href="css/libs/leaflet-1.7.1/leaflet.css">
-    <link href='https://api.mapbox.com/mapbox.js/plugins/leaflet-fullscreen/v1.0.1/leaflet.fullscreen.css' rel='stylesheet' />
+    <link rel="stylesheet" href="css/libs/leaflet-fullscreen/leaflet.fullscreen.css" />
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -291,8 +291,8 @@
     <script src="js/libs/owl.carousel.min.js"></script>
     <script src="js/libs/bootstrap.bundle.min.js"></script>
     <script src="js/libs/bootstrap-select.min.js"></script>
-    <script src="js/libs/leaflet-1.7.1/leaflet-src.js"></script>
-    <script src='https://api.mapbox.com/mapbox.js/plugins/leaflet-fullscreen/v1.0.1/Leaflet.fullscreen.min.js'></script>
+    <script src="js/libs/leaflet-1.7.1/leaflet.js"></script>
+    <script src='js/libs/leaflet-fullscreen/Leaflet.fullscreen.min.js'></script>
 
     <script src="js/scripts.js"></script>
 
@@ -403,6 +403,7 @@ rechtsgültigen Bebauungsplan.</div>
                     })
                     .openOn(map);
 
+                // TODO: js should go to back and back must return the content of the tooltip
                 // $.ajax({
                 //     url: bsUrl,
                 //     data: {

@@ -140,6 +140,10 @@ p {
   padding-left: 107px;
 }
 
+.pe-107px {
+  padding-right: 107px;
+}
+
 @media (max-width: 992px) {
   h1,
 h2 {
@@ -158,9 +162,14 @@ h4 {
   .mb-74px {
     margin-bottom: 38px;
   }
-
+}
+@media (max-width: 1200px) {
   .ps-107px {
     padding-left: 16px;
+  }
+
+  .pe-107px {
+    padding-right: 16px;
   }
 }
 h1,
@@ -299,6 +308,10 @@ p {
   padding-left: 107px;
 }
 
+.pe-107px {
+  padding-right: 107px;
+}
+
 @media (max-width: 992px) {
   h1,
 h2 {
@@ -317,9 +330,14 @@ h4 {
   .mb-74px {
     margin-bottom: 38px;
   }
-
+}
+@media (max-width: 1200px) {
   .ps-107px {
     padding-left: 16px;
+  }
+
+  .pe-107px {
+    padding-right: 16px;
   }
 }
 .map-control .map-toolbar {

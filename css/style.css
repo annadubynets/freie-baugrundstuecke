@@ -128,16 +128,8 @@ p {
   padding-top: 77px;
 }
 
-.pt-80px {
-  padding-top: 80px;
-}
-
 .pb-85px {
   padding-bottom: 85px;
-}
-
-.mt-80px {
-  margin-top: 80px;
 }
 
 .mb-74px {
@@ -146,10 +138,6 @@ p {
 
 .ps-107px {
   padding-left: 107px;
-}
-
-.pe-107px {
-  padding-right: 107px;
 }
 
 @media (max-width: 992px) {
@@ -173,10 +161,6 @@ h4 {
 
   .ps-107px {
     padding-left: 16px;
-  }
-
-  .pe-107px {
-    padding-right: 16px;
   }
 }
 h1,
@@ -303,16 +287,8 @@ p {
   padding-top: 77px;
 }
 
-.pt-80px {
-  padding-top: 80px;
-}
-
 .pb-85px {
   padding-bottom: 85px;
-}
-
-.mt-80px {
-  margin-top: 80px;
 }
 
 .mb-74px {
@@ -321,10 +297,6 @@ p {
 
 .ps-107px {
   padding-left: 107px;
-}
-
-.pe-107px {
-  padding-right: 107px;
 }
 
 @media (max-width: 992px) {
@@ -348,10 +320,6 @@ h4 {
 
   .ps-107px {
     padding-left: 16px;
-  }
-
-  .pe-107px {
-    padding-right: 16px;
   }
 }
 .map-control .map-toolbar {
@@ -502,12 +470,6 @@ footer {
 }
 .navbar-light .navbar-toggler:focus {
   box-shadow: none;
-}
-
-.navbar-light.expanded .navbar-toggler-icon {
-  background-image: url("../images/toggler-icon.svg");
-  max-width: 20px;
-  max-height: 20px;
 }
 
 .navbar-light .navbar-toggler-icon {

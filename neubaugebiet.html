@@ -291,7 +291,7 @@
     <script src="js/libs/owl.carousel.min.js"></script>
     <script src="js/libs/bootstrap.bundle.min.js"></script>
     <script src="js/libs/bootstrap-select.min.js"></script>
-    <script src="js/libs/leaflet-1.8-dev/leaflet.js"></script>
+    <script src="js/libs/leaflet-1.8-dev/leaflet-src.js"></script>
     <script src='js/libs/leaflet-fullscreen/Leaflet.fullscreen.min.js'></script>
 
     <script src="js/scripts.js"></script>
@@ -463,9 +463,13 @@ rechtsgültigen Bebauungsplan.</div>
 
             // Initialisierung der Karte
             var map = L.map('map', {
+                //crs: L.CRS.Simple,
                 scrollWheelZoom: false,
                 fullscreenControl: true,
                 attributionControl: false,
+                renderer: new L.SVG({
+                    padding: 1.5
+                })
             });
             map.setView([50.31975310, 8.42303423], 18);
 

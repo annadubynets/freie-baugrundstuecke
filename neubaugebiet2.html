@@ -1,0 +1,750 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="css/libs/leaflet-1.8-dev/leaflet.css">
+    <link rel="stylesheet" href="css/libs/leaflet-fullscreen/leaflet.fullscreen.css" />
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <div id="navbar-top-main" class="navbar-expand-lg navbar-top navbar-light bg-transparent pt-2 d-lg-block d-none">
+            <div class="container-fluid">
+                <div class="navbar-nav align-items-center">
+                    <div class="ms-auto">
+                        <ul class="nav nav-style">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Willkommen</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Informationen</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Grundstücksbesitzer-Login</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Kontakt</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="navbar navbar-expand-lg navbar-light bg-transparent pb-lg-5 pb-4">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="./index.html">
+                    <img src="images/logo.svg" class="navbar-brand-img d-lg-block d-none" alt="logo">
+                    <img src="images/logo-mobile.svg" class="navbar-brand-img d-lg-none d-block" alt="logo mobile">
+                </a>
+                <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse collapse align-self-end" id="navbarCollapse">
+                    <!-- Navigation -->
+                    <ul class="navbar-nav ms-auto d-lg-flex d-none">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="baugebiete.html">BAUGEBIETE/BAULÜCKEN</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">LEERSTANDSKATASTER</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">BAU-INTERESSENTENLISTE</a>
+                        </li>
+                    </ul>
+
+                    <ul class="navbar-nav p-5 d-lg-none d-block mb-5">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Willkommen</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link active" href="baugebiete.html">BAUGEBIETE/BAULÜCKEN</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">BAU-INTERESSENTENLISTE</a>
+                        </li>
+
+                        <li class="nav-item nav-style pt-77px">
+                            <a class="nav-link" href="#">Informationen</a>
+                        </li>
+
+                        <li class="nav-item nav-style">
+                            <a class="nav-link" href="#">Grundstücksbesitzer-Login</a>
+                        </li>
+
+                        <li class="nav-item nav-style">
+                            <a class="nav-link" href="#">Kontakt</a>
+                        </li>
+                    </ul>
+
+                    <div class="d-block d-lg-none text-center pb-4 pt-5">
+                        <a href="#" class="expanded-navbar-toggler">
+                            <img src="images/toggler-icon.png" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="mb-74px">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 mb-5 order-lg-0 order-0">
+                    <h1 class="pb-2">Neubaugebiet: Weilburg-Kubach „Auf der Seelbach“</h1>
+                    <p><span class="pe-2"><img src="images/location.png" class="img-style"></span> 35781 Weilburg - Kubach</p>
+                    <p class="mb-0">Die Stadt Weilburg als Mittelzentrum im Landkreis Limburg-Weilburg ist aufgrund der zentralen Lage und der guten Verkehrsanbindung an das überörtliche Verkehrsnetz ein nachgefragter Wohn- und Gewerbestandort. Zudem verfügt die Stadt
+                        Weilburg über ein vielfältiges Bildungs-, Kultur- und Freizeitangebot und bietet eine Vielzahl an Einkaufsmöglichkeiten. In sehr guter Ortsrandlage [...]
+                    </p>
+
+                    <div class="collapse" id="collapseExample">
+                        <div class="card card-body p-0">
+                            <p class="mb-0">Das Plangebiet schließt damit die Lücke zwischen der bestehenden Wohnbebauung und dem Gelände des Golfplatzes auf der Kuppe oberhalb der Ortslage. Im Osten wird das Gebiet begrenzt durch die Merzhäuser Straße (K 753), im Westen
+                                stößt es direkt an einen Waldrand. Die Erschließung des Gebietes erfolgt von Südosten und Nordosten her über die Merzhäuser Straße. Es ist ein Allgemeines Wohngebiet mit unterschiedlichen Verdichtungsgraden geplant. Das
+                                Gebiet soll in zwei Bauabschnitten erschlossen werden.</p>
+                        </div>
+                    </div>
+                    <p>
+                        <a class="btn read-more-link px-0 collapsed" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                            Weiterlesen
+                        </a>
+                    </p>
+                </div>
+                <div class="col-lg-7 align-self-center mb-74px order-lg-1 order-1">
+                    <div class="d-lg-block d-none">
+                        <ul class="nav nav-pills nav-justified">
+                            <li class="nav-item text-center">
+                                <img src="images/plan.png">
+                                <a class="nav-link active" aria-current="page" href="#">Interaktiver B-Plan</a>
+                            </li>
+                            <li class="nav-item text-center">
+                                <img src="images/video.png">
+                                <a class="nav-link" href="#">Video</a>
+                            </li>
+                            <li class="nav-item text-center">
+                                <img src="images/photos.png">
+                                <a class="nav-link" href="#">Fotos</a>
+                            </li>
+                            <li class="nav-item text-center">
+                                <img src="images/zeitschiene.png">
+                                <a class="nav-link" href="#">Zeitschiene</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="d-lg-none d-block">
+                        <div class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle text-start w-100 d-flex" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+                                <a class="dropdown-item d-inline" href="#"><span class="pe-2"><img src="images/plan.png"></span>Interaktiver B-Plan</a>
+                            </button>
+                            <ul class="dropdown-menu p-4 w-100" aria-labelledby="dropdownMenuButton">
+                                <li class="pb-4">
+                                    <a class="dropdown-item d-inline px-0" href="#"><span class="pe-2"><img src="images/video.png"></span>Video</a>
+                                </li>
+                                <li class="pb-4">
+                                    <a class="dropdown-item d-inline px-0" href="#"><span class="pe-2"><img src="images/photos.png"></span>Fotos</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item d-inline px-0" href="#"><span class="pe-2"><img src="images/zeitschiene.png"></span>Zeitschiene</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 offset-lg-1 text-lg-end text-start mb-74px order-lg-2 order-3">
+                    <a href="#" class="btn btn-success my-2">Jetzt online bewerben</a>
+                    <a href="#" class="btn btn-light my-2">Bebauungsplan herunterladen</a>
+                </div>
+                <div class="col-lg-4 order-lg-3 order-4">
+                    <div class="fw-bold font-size-16 text-success pb-2">Kontaktdaten bei Fragen</div>
+                    <div class="fw-bold font-size-14 text-dark">Peter Götz</div>
+                    <p class="font-size-14">Stadt Weilburg an der Lahn<br> FD 3.4<br> Mauerstrasse 6/8<br> 35781 Weilburg an der Lahn
+                    </p>
+                    <p class="font-size-14">Tel: 06471/31426<br> Fax: 06471/31477</p>
+                    <p class="font-size-14">E-Mail: P.Goetz@weilburg.de<br> Internet: www.weilburg.de</p>
+
+                    <div class="fw-bold font-size-16 text-success pb-2">Downloads und Links</div>
+                    <a href="#" class="d-block font-size-14 text-dark pb-2"><span class="pe-2"><img src="images/copy.svg"></span>B-Plan "Auf der Seelbach" (PDF)</a>
+                    <a href="#" class="d-block font-size-14 text-dark"><span class="pe-2"><img src="images/copy.svg"></span>Netzanschluss-Broschüre Stadtwerke Weilburg (PDF)</a>
+                </div>
+                <div class="col-lg-7 offset-lg-1 order-lg-4 order-2 mb-lg-0 mb-5">
+                    <!-- 
+                        Map toolbar container is not visible, JS takes the inner map-toolbar
+                        and inserts it into map. If this way is not convenient, you can construct it in JS
+                    -->
+                    <div class="fullscreen-map-partials d-none">
+                        <div class="map-toolbar container px-0" id="map-toolbar">
+                            <div class="row collapse show justify-content-center" id="map-options-panel">
+                                <div class="col-lg-3 bg-white py-lg-4 pt-4 pb-0 px-4">
+                                    <label class="pb-2">Beschriftung:</label>
+                                    <select class="selectpicker p-2" name='labels' id="labels-filter">
+                                        <option value="no">Keine Beschriftung</option>
+                                        <option value="number" selected>Grundstücksnummern</option>
+                                        <option value="size">Größe in Quadratmetern</option>
+                                    </select>
+                                </div>
+                                <div class="col-lg-6 bg-white py-4 px-4">
+                                    <label class="d-block pb-2">Legende:</label>
+                                    <span class="badge bg-success my-1 me-1">Verfügbar</span>
+                                    <span class="badge bg-green my-1 me-1">Verfügbar (Investor)</span>
+                                    <span class="badge bg-yellow text-dark my-1 me-1">Verfügbar (geförderter Wohnungsbau)</span>
+                                    <span class="badge bg-warning my-1 me-1">Reserviert</span>
+                                    <span class="badge bg-danger my-1 me-1">Verkauft</span>
+                                    <span class="badge bg-secondary my-1 me-1">Nicht verfügbar</span>
+                                    <span class="badge bg-dark my-1 me-1">Straße</span>
+                                    <span class="badge bg-primary my-1 me-1">Gewässer</span>
+                                    <span class="badge bg-pink my-1 me-1">Kindergarten</span>
+                                    <span class="badge bg-gold my-1 me-1">Grünfläche</span>
+                                </div>
+                            </div>
+                            <div class="row justify-content-center">
+                                <div class="col-lg-3 col-8 bg-white text-center p-2 toolbar-anchor">
+                                    <a class="read-more-link text-dark font-size-12 font-weight-500 text-dark" data-bs-toggle="collapse" href="#map-options-panel" role="button" aria-expanded="true" aria-controls="map-options-panel">
+                                        Ansicht anpassen
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="map-footer mx-3" id="map-footer">
+                            <div class="text-end mb-3 d-lg-block d-none">
+                                <a href="#" class="btn btn-light me-4">Bebauungsplan herunterladen</a>
+                                <a href="#" class="btn btn-success">Jetzt online bewerben</a>
+                            </div>
+                            <div class="d-flex justify-content-between mb-3 d-lg-none d-block">
+                                <a href="#" class="btn btn-success me-3 w-100">Jetzt bewerben</a>
+                                <a href="#" class="btn rounded-circle exit-fullscreen-btn p-3"></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="map-outer" class="h-100 position-relative map-control">
+                        <div id="map" class="map-container h-100">
+                            <!-- Embeds with JS -->
+                        </div>
+
+                        <div class="map-watermark-cover position-absolute d-flex justify-content-center align-items-center">
+                            <div class="align-self-center text-center">
+                                <img src="images/map-icon.png">
+                                <p class="font-size-18 text-white pt-3">Interaktiven Bebauungsplan öffnen</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-body">
+        <div class="container">
+            <div class="row mb-74px">
+                <div class="col-lg-6 mb-lg-0 mb-5">
+                    <p class="font-size-12 fw-bold">FreieBaugrundstuecke.de ist eine Entwicklung der Coptercam AG
+                    </p>
+                    <img src="images/footer-logo.svg" class="d-lg-block d-none">
+                    <img src="images/footer-logo-mobile.svg" class="d-lg-none d-block">
+                </div>
+                <div class="col-lg-3">
+                    <h6>Freie Baugrundstücke</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Baugebiete / Baulücken</a></li>
+                        <li><a href="#">Bau-Interessentenlisten</a></li>
+                        <li><a href="#">Leerstandskataster</a></li>
+                        <li><a href="#">Vergabekonzept</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3">
+                    <h6>Informationen</h6>
+                    <ul class="list-unstyled mb-0">
+                        <li><a href="#">Über das Portal</a></li>
+                        <li><a href="#">Referenzen</a></li>
+                        <li><a href="#">Login</a></li>
+                        <li><a href="#">Kontakt</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6 order-lg-0 order-1">
+                    <div class="font-size-12 fw-bold">© 2021 – freiebaugrundstuecke.de
+                    </div>
+                </div>
+                <div class="col-lg-6 text-lg-end text-start order-lg-1 order-0">
+                    <ul class="footer-list list-unstyled">
+                        <li class="pe-3"><a href="#">Datenschutz</a></li>
+                        <li><a href="#">Impressum</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/libs/jquery-1.12.4.js"></script>
+    <script src="js/libs/jquery-ui.js"></script>
+    <script src="js/libs/owl.carousel.min.js"></script>
+    <script src="js/libs/bootstrap.bundle.min.js"></script>
+    <script src="js/libs/bootstrap-select.min.js"></script>
+    <script src="js/libs/leaflet-1.8-dev/leaflet-src.js"></script>
+    <script src='js/libs/leaflet-fullscreen/Leaflet.fullscreen.min.js'></script>
+
+    <script src="js/scripts.js"></script>
+
+    <script>
+        $(document).ready(function() {
+
+            var loader_40 = '<img src="https://www.freiebaugrundstuecke.de/img/loader_40.gif" style="position:relative;left:50%;margin:50px 0 50px -20px;" />';
+            var bsUrl = 'https://www.freiebaugrundstuecke.de/ajax/building-site-box';
+            //var loader_40 = '<img src="/img/loader_40.gif" style="position:relative;left:50%;margin:50px 0 50px -20px;" />';
+            //var bsUrl = '/ajax/building-site-box?aerial-image=37';
+            var tile_size = 212;
+            var image_ratio = 2 / 3;
+            var tile_path = 'https://www.freiebaugrundstuecke.de/data/37/tiles/';
+            var polys = [];
+            var popups = [];
+            var labelData = $.parseJSON('{"784":{"numbers":"272","price":"\u20ac","size":"961m<sup>2<\/sup>","house_number":""},"785":{"numbers":"271","price":"\u20ac","size":"833m<sup>2<\/sup>","house_number":""},"786":{"numbers":"270","price":"\u20ac","size":"786m<sup>2<\/sup>","house_number":""},"787":{"numbers":"269","price":"\u20ac","size":"739m<sup>2<\/sup>","house_number":""},"788":{"numbers":"268","price":"\u20ac","size":"691m<sup>2<\/sup>","house_number":""},"789":{"numbers":"267","price":"\u20ac","size":"644m<sup>2<\/sup>","house_number":""},"790":{"numbers":"266","price":"\u20ac","size":"569m<sup>2<\/sup>","house_number":""},"791":{"numbers":"265","price":"\u20ac","size":"930m<sup>2<\/sup>","house_number":""},"792":{"numbers":"264","price":"\u20ac","size":"571m<sup>2<\/sup>","house_number":""},"793":{"numbers":"263","price":"\u20ac","size":"583m<sup>2<\/sup>","house_number":""},"794":{"numbers":"262","price":"\u20ac","size":"839m<sup>2<\/sup>","house_number":""},"795":{"numbers":"166","price":"\u20ac","size":"512m<sup>2<\/sup>","house_number":""},"796":{"numbers":"167","price":"\u20ac","size":"517m<sup>2<\/sup>","house_number":""},"797":{"numbers":"165","price":"\u20ac","size":"437m<sup>2<\/sup>","house_number":""},"798":{"numbers":"162","price":"\u20ac","size":"410m<sup>2<\/sup>","house_number":""},"799":{"numbers":"164","price":"\u20ac","size":"437m<sup>2<\/sup>","house_number":""},"800":{"numbers":"163","price":"\u20ac","size":"397m<sup>2<\/sup>","house_number":""},"801":{"numbers":"156","price":"\u20ac","size":"443m<sup>2<\/sup>","house_number":""},"802":{"numbers":"157","price":"\u20ac","size":"499m<sup>2<\/sup>","house_number":""},"803":{"numbers":"161","price":"\u20ac","size":"410m<sup>2<\/sup>","house_number":""},"804":{"numbers":"158","price":"\u20ac","size":"342m<sup>2<\/sup>","house_number":""},"805":{"numbers":"160","price":"\u20ac","size":"397m<sup>2<\/sup>","house_number":""},"806":{"numbers":"159","price":"\u20ac","size":"329m<sup>2<\/sup>","house_number":""},"808":{"numbers":"130","price":"\u20ac","size":"356m<sup>2<\/sup>","house_number":""},"809":{"numbers":"109","price":"\u20ac","size":"686m<sup>2<\/sup>","house_number":""},"810":{"numbers":"110","price":"\u20ac","size":"327m<sup>2<\/sup>","house_number":""},"811":{"numbers":"111","price":"\u20ac","size":"323m<sup>2<\/sup>","house_number":""},"812":{"numbers":"87","price":"\u20ac","size":"638m<sup>2<\/sup>","house_number":""},"813":{"numbers":"86","price":"\u20ac","size":"312m<sup>2<\/sup>","house_number":""},"814":{"numbers":"85","price":"\u20ac","size":"339m<sup>2<\/sup>","house_number":""},"815":{"numbers":"69","price":"\u20ac","size":"553m<sup>2<\/sup>","house_number":""},"816":{"numbers":"70","price":"\u20ac","size":"530m<sup>2<\/sup>","house_number":""},"817":{"numbers":"178","price":"\u20ac","size":"455m<sup>2<\/sup>","house_number":""},"818":{"numbers":"179","price":"\u20ac","size":"467m<sup>2<\/sup>","house_number":""},"819":{"numbers":"177","price":"\u20ac","size":"500m<sup>2<\/sup>","house_number":""},"820":{"numbers":"180","price":"\u20ac","size":"468m<sup>2<\/sup>","house_number":""},"821":{"numbers":"176","price":"\u20ac","size":"467m<sup>2<\/sup>","house_number":""},"822":{"numbers":"181","price":"\u20ac","size":"426m<sup>2<\/sup>","house_number":""},"823":{"numbers":"175","price":"\u20ac","size":"480m<sup>2<\/sup>","house_number":""},"824":{"numbers":"182","price":"\u20ac","size":"480m<sup>2<\/sup>","house_number":""},"825":{"numbers":"174","price":"\u20ac","size":"480m<sup>2<\/sup>","house_number":""},"826":{"numbers":"168","price":"\u20ac","size":"264m<sup>2<\/sup>","house_number":""},"827":{"numbers":"169","price":"\u20ac","size":"264m<sup>2<\/sup>","house_number":""},"828":{"numbers":"170","price":"\u20ac","size":"269m<sup>2<\/sup>","house_number":""},"829":{"numbers":"171","price":"\u20ac","size":"263m<sup>2<\/sup>","house_number":""},"830":{"numbers":"172","price":"\u20ac","size":"269m<sup>2<\/sup>","house_number":""},"831":{"numbers":"173","price":"\u20ac","size":"263m<sup>2<\/sup>","house_number":""},"832":{"numbers":"129","price":"\u20ac","size":"266m<sup>2<\/sup>","house_number":""},"833":{"numbers":"128","price":"\u20ac","size":"271m<sup>2<\/sup>","house_number":""},"834":{"numbers":"127","price":"\u20ac","size":"271m<sup>2<\/sup>","house_number":""},"835":{"numbers":"126","price":"\u20ac","size":"271m<sup>2<\/sup>","house_number":""},"836":{"numbers":"125","price":"\u20ac","size":"271m<sup>2<\/sup>","house_number":""},"837":{"numbers":"124","price":"\u20ac","size":"271m<sup>2<\/sup>","house_number":""},"838":{"numbers":"112","price":"\u20ac","size":"447m<sup>2<\/sup>","house_number":""},"839":{"numbers":"113","price":"\u20ac","size":"459m<sup>2<\/sup>","house_number":""},"840":{"numbers":"114","price":"\u20ac","size":"459m<sup>2<\/sup>","house_number":""},"841":{"numbers":"115","price":"\u20ac","size":"447m<sup>2<\/sup>","house_number":""},"842":{"numbers":"84","price":"\u20ac","size":"312m<sup>2<\/sup>","house_number":""},"843":{"numbers":"83","price":"\u20ac","size":"312m<sup>2<\/sup>","house_number":""},"844":{"numbers":"82","price":"\u20ac","size":"312m<sup>2<\/sup>","house_number":""},"845":{"numbers":"81","price":"\u20ac","size":"312m<sup>2<\/sup>","house_number":""},"846":{"numbers":"71","price":"\u20ac","size":"431m<sup>2<\/sup>","house_number":""},"847":{"numbers":"72","price":"\u20ac","size":"444m<sup>2<\/sup>","house_number":""},"848":{"numbers":"73","price":"\u20ac","size":"444m<sup>2<\/sup>","house_number":""},"849":{"numbers":"74","price":"\u20ac","size":"427m<sup>2<\/sup>","house_number":""},"850":{"numbers":"191","price":"\u20ac","size":"377m<sup>2<\/sup>","house_number":""},"851":{"numbers":"192","price":"\u20ac","size":"389m<sup>2<\/sup>","house_number":""},"852":{"numbers":"190","price":"\u20ac","size":"332m<sup>2<\/sup>","house_number":""},"853":{"numbers":"189","price":"\u20ac","size":"361m<sup>2<\/sup>","house_number":""},"854":{"numbers":"193","price":"\u20ac","size":"422m<sup>2<\/sup>","house_number":""},"855":{"numbers":"188","price":"\u20ac","size":"448m<sup>2<\/sup>","house_number":""},"856":{"numbers":"183","price":"\u20ac","size":"256m<sup>2<\/sup>","house_number":""},"857":{"numbers":"184","price":"\u20ac","size":"256m<sup>2<\/sup>","house_number":""},"858":{"numbers":"185","price":"\u20ac","size":"256m<sup>2<\/sup>","house_number":""},"859":{"numbers":"186","price":"\u20ac","size":"256m<sup>2<\/sup>","house_number":""},"860":{"numbers":"187","price":"\u20ac","size":"279m<sup>2<\/sup>","house_number":""},"861":{"numbers":"122","price":"\u20ac","size":"270m<sup>2<\/sup>","house_number":""},"862":{"numbers":"121","price":"\u20ac","size":"230m<sup>2<\/sup>","house_number":""},"863":{"numbers":"120","price":"\u20ac","size":"270m<sup>2<\/sup>","house_number":""},"864":{"numbers":"119","price":"\u20ac","size":"261m<sup>2<\/sup>","house_number":""},"865":{"numbers":"118","price":"\u20ac","size":"210m<sup>2<\/sup>","house_number":""},"866":{"numbers":"117","price":"\u20ac","size":"210m<sup>2<\/sup>","house_number":""},"867":{"numbers":"116","price":"\u20ac","size":"261m<sup>2<\/sup>","house_number":""},"868":{"numbers":"123","price":"\u20ac","size":"1.876m<sup>2<\/sup>","house_number":""},"869":{"numbers":"80","price":"\u20ac","size":"309m<sup>2<\/sup>","house_number":""},"870":{"numbers":"79","price":"\u20ac","size":"309m<sup>2<\/sup>","house_number":""},"871":{"numbers":"78","price":"\u20ac","size":"285m<sup>2<\/sup>","house_number":""},"872":{"numbers":"77","price":"\u20ac","size":"285m<sup>2<\/sup>","house_number":""},"873":{"numbers":"76","price":"\u20ac","size":"285m<sup>2<\/sup>","house_number":""},"874":{"numbers":"75","price":"\u20ac","size":"283m<sup>2<\/sup>","house_number":""},"875":{"numbers":"31","price":"\u20ac","size":"550m<sup>2<\/sup>","house_number":""},"876":{"numbers":"32","price":"\u20ac","size":"411m<sup>2<\/sup>","house_number":""},"877":{"numbers":"33","price":"\u20ac","size":"471m<sup>2<\/sup>","house_number":""},"878":{"numbers":"34","price":"\u20ac","size":"577m<sup>2<\/sup>","house_number":""},"879":{"numbers":"35","price":"\u20ac","size":"703m<sup>2<\/sup>","house_number":""},"880":{"numbers":"37","price":"\u20ac","size":"816m<sup>2<\/sup>","house_number":""},"881":{"numbers":"36","price":"\u20ac","size":"734m<sup>2<\/sup>","house_number":""},"882":{"numbers":"14","price":"180\u20ac","size":"456m<sup>2<\/sup>","house_number":null},"883":{"numbers":"13","price":"180\u20ac","size":"385m<sup>2<\/sup>","house_number":null},"884":{"numbers":"12","price":"180\u20ac","size":"591m<sup>2<\/sup>","house_number":null},"885":{"numbers":"11","price":"180\u20ac","size":"490m<sup>2<\/sup>","house_number":null},"886":{"numbers":"10","price":"180\u20ac","size":"388m<sup>2<\/sup>","house_number":null},"887":{"numbers":"9","price":"180\u20ac","size":"416m<sup>2<\/sup>","house_number":null},"888":{"numbers":"1","price":"180\u20ac","size":"386m<sup>2<\/sup>","house_number":null},"889":{"numbers":"2","price":"180\u20ac","size":"436m<sup>2<\/sup>","house_number":null},"890":{"numbers":"3","price":"180\u20ac","size":"461m<sup>2<\/sup>","house_number":null},"891":{"numbers":"4","price":"180\u20ac","size":"461m<sup>2<\/sup>","house_number":null},"892":{"numbers":"5","price":"180\u20ac","size":"461m<sup>2<\/sup>","house_number":null},"893":{"numbers":"6","price":"180\u20ac","size":"461m<sup>2<\/sup>","house_number":null},"894":{"numbers":"7","price":"180\u20ac","size":"461m<sup>2<\/sup>","house_number":null},"895":{"numbers":"8","price":"180\u20ac","size":"841m<sup>2<\/sup>","house_number":null},"896":{"numbers":"","price":"","size":"","house_number":""},"897":{"numbers":"261","price":"\u20ac","size":"334m<sup>2<\/sup>","house_number":""},"898":{"numbers":"260","price":"\u20ac","size":"303m<sup>2<\/sup>","house_number":""},"899":{"numbers":"259","price":"\u20ac","size":"311m<sup>2<\/sup>","house_number":""},"900":{"numbers":"258","price":"\u20ac","size":"312m<sup>2<\/sup>","house_number":""},"901":{"numbers":"257","price":"\u20ac","size":"446m<sup>2<\/sup>","house_number":""},"902":{"numbers":"256","price":"\u20ac","size":"447m<sup>2<\/sup>","house_number":""},"903":{"numbers":"255","price":"\u20ac","size":"493m<sup>2<\/sup>","house_number":""},"904":{"numbers":"254","price":"\u20ac","size":"1.091m<sup>2<\/sup>","house_number":""},"905":{"numbers":"253","price":"\u20ac","size":"648m<sup>2<\/sup>","house_number":""},"906":{"numbers":"252","price":"\u20ac","size":"626m<sup>2<\/sup>","house_number":""},"907":{"numbers":"251","price":"\u20ac","size":"685m<sup>2<\/sup>","house_number":""},"908":{"numbers":"250","price":"\u20ac","size":"650m<sup>2<\/sup>","house_number":""},"909":{"numbers":"249","price":"\u20ac","size":"659m<sup>2<\/sup>","house_number":""},"910":{"numbers":"248","price":"\u20ac","size":"646m<sup>2<\/sup>","house_number":""},"911":{"numbers":"247","price":"\u20ac","size":"641m<sup>2<\/sup>","house_number":""},"912":{"numbers":"203","price":"\u20ac","size":"447m<sup>2<\/sup>","house_number":""},"913":{"numbers":"204","price":"\u20ac","size":"435m<sup>2<\/sup>","house_number":""},"914":{"numbers":"205","price":"\u20ac","size":"437m<sup>2<\/sup>","house_number":""},"915":{"numbers":"202","price":"\u20ac","size":"406m<sup>2<\/sup>","house_number":""},"916":{"numbers":"201","price":"\u20ac","size":"406m<sup>2<\/sup>","house_number":""},"917":{"numbers":"200","price":"\u20ac","size":"480m<sup>2<\/sup>","house_number":""},"918":{"numbers":"194","price":"\u20ac","size":"300m<sup>2<\/sup>","house_number":""},"919":{"numbers":"195","price":"\u20ac","size":"275m<sup>2<\/sup>","house_number":""},"920":{"numbers":"196","price":"\u20ac","size":"274m<sup>2<\/sup>","house_number":""},"921":{"numbers":"197","price":"\u20ac","size":"273m<sup>2<\/sup>","house_number":""},"922":{"numbers":"198","price":"\u20ac","size":"273m<sup>2<\/sup>","house_number":""},"923":{"numbers":"199","price":"\u20ac","size":"270m<sup>2<\/sup>","house_number":""},"924":{"numbers":"231","price":"\u20ac","size":"271m<sup>2<\/sup>","house_number":""},"925":{"numbers":"232","price":"\u20ac","size":"271m<sup>2<\/sup>","house_number":""},"926":{"numbers":"233","price":"\u20ac","size":"270m<sup>2<\/sup>","house_number":""},"927":{"numbers":"234","price":"\u20ac","size":"270m<sup>2<\/sup>","house_number":""},"928":{"numbers":"235","price":"\u20ac","size":"271m<sup>2<\/sup>","house_number":""},"929":{"numbers":"236","price":"\u20ac","size":"271m<sup>2<\/sup>","house_number":""},"930":{"numbers":"246","price":"\u20ac","size":"480m<sup>2<\/sup>","house_number":""},"931":{"numbers":"245","price":"\u20ac","size":"480m<sup>2<\/sup>","house_number":""},"932":{"numbers":"244","price":"\u20ac","size":"491m<sup>2<\/sup>","house_number":""},"933":{"numbers":"243","price":"\u20ac","size":"438m<sup>2<\/sup>","house_number":""},"934":{"numbers":"242","price":"\u20ac","size":"438m<sup>2<\/sup>","house_number":""},"935":{"numbers":"237","price":"\u20ac","size":"480m<sup>2<\/sup>","house_number":""},"936":{"numbers":"238","price":"\u20ac","size":"480m<sup>2<\/sup>","house_number":""},"937":{"numbers":"239","price":"\u20ac","size":"499m<sup>2<\/sup>","house_number":""},"938":{"numbers":"240","price":"\u20ac","size":"442m<sup>2<\/sup>","house_number":""},"939":{"numbers":"241","price":"\u20ac","size":"430m<sup>2<\/sup>","house_number":""},"940":{"numbers":"206","price":"\u20ac","size":"271m<sup>2<\/sup>","house_number":""},"941":{"numbers":"207","price":"\u20ac","size":"271m<sup>2<\/sup>","house_number":""},"942":{"numbers":"208","price":"\u20ac","size":"270m<sup>2<\/sup>","house_number":""},"943":{"numbers":"209","price":"\u20ac","size":"270m<sup>2<\/sup>","house_number":""},"944":{"numbers":"210","price":"\u20ac","size":"271m<sup>2<\/sup>","house_number":""},"945":{"numbers":"211","price":"\u20ac","size":"271m<sup>2<\/sup>","house_number":""},"946":{"numbers":"219","price":"\u20ac","size":"480m<sup>2<\/sup>","house_number":""},"947":{"numbers":"218","price":"\u20ac","size":"480m<sup>2<\/sup>","house_number":""},"948":{"numbers":"217","price":"\u20ac","size":"424m<sup>2<\/sup>","house_number":""},"949":{"numbers":"216","price":"\u20ac","size":"424m<sup>2<\/sup>","house_number":""},"950":{"numbers":"212","price":"\u20ac","size":"480m<sup>2<\/sup>","house_number":""},"951":{"numbers":"213","price":"\u20ac","size":"480m<sup>2<\/sup>","house_number":""},"952":{"numbers":"214","price":"\u20ac","size":"418m<sup>2<\/sup>","house_number":""},"953":{"numbers":"215","price":"\u20ac","size":"406m<sup>2<\/sup>","house_number":""},"954":{"numbers":"133","price":"\u20ac","size":"286m<sup>2<\/sup>","house_number":""},"955":{"numbers":"134","price":"\u20ac","size":"210m<sup>2<\/sup>","house_number":""},"956":{"numbers":"135","price":"\u20ac","size":"210m<sup>2<\/sup>","house_number":""},"957":{"numbers":"136","price":"\u20ac","size":"210m<sup>2<\/sup>","house_number":""},"958":{"numbers":"137","price":"\u20ac","size":"210m<sup>2<\/sup>","house_number":""},"959":{"numbers":"138","price":"\u20ac","size":"210m<sup>2<\/sup>","house_number":""},"960":{"numbers":"139","price":"\u20ac","size":"285m<sup>2<\/sup>","house_number":""},"961":{"numbers":"155","price":"\u20ac","size":"434m<sup>2<\/sup>","house_number":""},"962":{"numbers":"154","price":"\u20ac","size":"406m<sup>2<\/sup>","house_number":""},"963":{"numbers":"153","price":"\u20ac","size":"495m<sup>2<\/sup>","house_number":""},"964":{"numbers":"152","price":"\u20ac","size":"495m<sup>2<\/sup>","house_number":""},"965":{"numbers":"151","price":"\u20ac","size":"400m<sup>2<\/sup>","house_number":""},"966":{"numbers":"150","price":"\u20ac","size":"400m<sup>2<\/sup>","house_number":""},"967":{"numbers":"140","price":"\u20ac","size":"478m<sup>2<\/sup>","house_number":""},"968":{"numbers":"141","price":"\u20ac","size":"443m<sup>2<\/sup>","house_number":""},"969":{"numbers":"142","price":"\u20ac","size":"443m<sup>2<\/sup>","house_number":""},"970":{"numbers":"143","price":"\u20ac","size":"443m<sup>2<\/sup>","house_number":""},"971":{"numbers":"144","price":"\u20ac","size":"405m<sup>2<\/sup>","house_number":""},"972":{"numbers":"145","price":"\u20ac","size":"392m<sup>2<\/sup>","house_number":""},"973":{"numbers":"88","price":"\u20ac","size":"287m<sup>2<\/sup>","house_number":""},"974":{"numbers":"89","price":"\u20ac","size":"210m<sup>2<\/sup>","house_number":""},"975":{"numbers":"90","price":"\u20ac","size":"210m<sup>2<\/sup>","house_number":""},"976":{"numbers":"91","price":"\u20ac","size":"210m<sup>2<\/sup>","house_number":""},"977":{"numbers":"92","price":"\u20ac","size":"210m<sup>2<\/sup>","house_number":""},"978":{"numbers":"93","price":"\u20ac","size":"210m<sup>2<\/sup>","house_number":""},"979":{"numbers":"94","price":"\u20ac","size":"286m<sup>2<\/sup>","house_number":""},"980":{"numbers":"108","price":"\u20ac","size":"480m<sup>2<\/sup>","house_number":""},"981":{"numbers":"107","price":"\u20ac","size":"480m<sup>2<\/sup>","house_number":""},"982":{"numbers":"106","price":"\u20ac","size":"496m<sup>2<\/sup>","house_number":""},"983":{"numbers":"105","price":"\u20ac","size":"437m<sup>2<\/sup>","house_number":""},"984":{"numbers":"104","price":"\u20ac","size":"437m<sup>2<\/sup>","house_number":""},"985":{"numbers":"95","price":"\u20ac","size":"480m<sup>2<\/sup>","house_number":""},"986":{"numbers":"96","price":"\u20ac","size":"480m<sup>2<\/sup>","house_number":""},"987":{"numbers":"97","price":"\u20ac","size":"498m<sup>2<\/sup>","house_number":""},"988":{"numbers":"98","price":"\u20ac","size":"441m<sup>2<\/sup>","house_number":""},"989":{"numbers":"99","price":"\u20ac","size":"429m<sup>2<\/sup>","house_number":""},"990":{"numbers":"63","price":"\u20ac","size":"260m<sup>2<\/sup>","house_number":""},"991":{"numbers":"62","price":"\u20ac","size":"280m<sup>2<\/sup>","house_number":""},"992":{"numbers":"61","price":"\u20ac","size":"280m<sup>2<\/sup>","house_number":""},"993":{"numbers":"60","price":"\u20ac","size":"280m<sup>2<\/sup>","house_number":""},"994":{"numbers":"64","price":"\u20ac","size":"446m<sup>2<\/sup>","house_number":""},"995":{"numbers":"65","price":"\u20ac","size":"254m<sup>2<\/sup>","house_number":""},"996":{"numbers":"66","price":"\u20ac","size":"272m<sup>2<\/sup>","house_number":""},"997":{"numbers":"67","price":"\u20ac","size":"290m<sup>2<\/sup>","house_number":""},"998":{"numbers":"68","price":"\u20ac","size":"296m<sup>2<\/sup>","house_number":""},"999":{"numbers":"40","price":"\u20ac","size":"278m<sup>2<\/sup>","house_number":""},"1000":{"numbers":"39","price":"\u20ac","size":"294m<sup>2<\/sup>","house_number":""},"1001":{"numbers":"38","price":"\u20ac","size":"500m<sup>2<\/sup>","house_number":""},"1002":{"numbers":"41","price":"\u20ac","size":"681m<sup>2<\/sup>","house_number":""},"1003":{"numbers":"42","price":"\u20ac","size":"629m<sup>2<\/sup>","house_number":""},"1004":{"numbers":"43","price":"\u20ac","size":"815m<sup>2<\/sup>","house_number":""},"1005":{"numbers":"44","price":"180\u20ac","size":"241m<sup>2<\/sup>","house_number":null},"1006":{"numbers":"45","price":"180\u20ac","size":"215m<sup>2<\/sup>","house_number":null},"1007":{"numbers":"46","price":"180\u20ac","size":"218m<sup>2<\/sup>","house_number":null},"1008":{"numbers":"47","price":"180\u20ac","size":"250m<sup>2<\/sup>","house_number":null},"1009":{"numbers":"48","price":"180\u20ac","size":"257m<sup>2<\/sup>","house_number":null},"1010":{"numbers":"49","price":"180\u20ac","size":"235m<sup>2<\/sup>","house_number":null},"1011":{"numbers":"50","price":"180\u20ac","size":"240m<sup>2<\/sup>","house_number":""},"1012":{"numbers":"51","price":"180\u20ac","size":"275m<sup>2<\/sup>","house_number":""},"1013":{"numbers":"52","price":"180\u20ac","size":"282m<sup>2<\/sup>","house_number":""},"1014":{"numbers":"53","price":"180\u20ac","size":"257m<sup>2<\/sup>","house_number":null},"1015":{"numbers":"54","price":"180\u20ac","size":"263m<sup>2<\/sup>","house_number":null},"1016":{"numbers":"55","price":"180\u20ac","size":"300m<sup>2<\/sup>","house_number":null},"1017":{"numbers":"230","price":"\u20ac","size":"710m<sup>2<\/sup>","house_number":""},"1018":{"numbers":"229","price":"\u20ac","size":"675m<sup>2<\/sup>","house_number":""},"1019":{"numbers":"228","price":"\u20ac","size":"640m<sup>2<\/sup>","house_number":""},"1020":{"numbers":"227","price":"\u20ac","size":"604m<sup>2<\/sup>","house_number":""},"1021":{"numbers":"226","price":"\u20ac","size":"569m<sup>2<\/sup>","house_number":""},"1022":{"numbers":"225","price":"\u20ac","size":"534m<sup>2<\/sup>","house_number":""},"1023":{"numbers":"224","price":"\u20ac","size":"499m<sup>2<\/sup>","house_number":""},"1024":{"numbers":"223","price":"\u20ac","size":"598m<sup>2<\/sup>","house_number":""},"1025":{"numbers":"222","price":"\u20ac","size":"574m<sup>2<\/sup>","house_number":""},"1026":{"numbers":"221","price":"\u20ac","size":"538m<sup>2<\/sup>","house_number":""},"1027":{"numbers":"220","price":"\u20ac","size":"502m<sup>2<\/sup>","house_number":""},"1028":{"numbers":"149","price":"\u20ac","size":"576m<sup>2<\/sup>","house_number":""},"1029":{"numbers":"148","price":"\u20ac","size":"556m<sup>2<\/sup>","house_number":""},"1030":{"numbers":"147","price":"\u20ac","size":"523m<sup>2<\/sup>","house_number":""},"1031":{"numbers":"146","price":"\u20ac","size":"489m<sup>2<\/sup>","house_number":""},"1032":{"numbers":"103","price":"\u20ac","size":"620m<sup>2<\/sup>","house_number":""},"1033":{"numbers":"102","price":"\u20ac","size":"581m<sup>2<\/sup>","house_number":""},"1034":{"numbers":"101","price":"\u20ac","size":"531m<sup>2<\/sup>","house_number":""},"1035":{"numbers":"100","price":"\u20ac","size":"480m<sup>2<\/sup>","house_number":""},"1036":{"numbers":"59","price":"\u20ac","size":"546m<sup>2<\/sup>","house_number":""},"1037":{"numbers":"58","price":"\u20ac","size":"506m<sup>2<\/sup>","house_number":""},"1038":{"numbers":"57","price":"\u20ac","size":"454m<sup>2<\/sup>","house_number":""},"1039":{"numbers":"56","price":"\u20ac","size":"537m<sup>2<\/sup>","house_number":""},"1040":{"numbers":"30","price":"180\u20ac","size":"2.998m<sup>2<\/sup>","house_number":null},"1041":{"numbers":"29","price":"180\u20ac","size":"544m<sup>2<\/sup>","house_number":null},"1042":{"numbers":"28","price":"180\u20ac","size":"446m<sup>2<\/sup>","house_number":null},"1043":{"numbers":"27","price":"180\u20ac","size":"476m<sup>2<\/sup>","house_number":null},"1044":{"numbers":"26","price":"180\u20ac","size":"615m<sup>2<\/sup>","house_number":null},"1045":{"numbers":"15","price":"180\u20ac","size":"472m<sup>2<\/sup>","house_number":null},"1046":{"numbers":"16","price":"180\u20ac","size":"254m<sup>2<\/sup>","house_number":null},"1047":{"numbers":"17","price":"180\u20ac","size":"281m<sup>2<\/sup>","house_number":null},"1048":{"numbers":"18","price":"180\u20ac","size":"295m<sup>2<\/sup>","house_number":null},"1049":{"numbers":"19","price":"180\u20ac","size":"311m<sup>2<\/sup>","house_number":null},"1050":{"numbers":"20","price":"180\u20ac","size":"543m<sup>2<\/sup>","house_number":null},"1051":{"numbers":"21","price":"180\u20ac","size":"217m<sup>2<\/sup>","house_number":null},"1052":{"numbers":"22","price":"180\u20ac","size":"241m<sup>2<\/sup>","house_number":null},"1053":{"numbers":"23","price":"180\u20ac","size":"498m<sup>2<\/sup>","house_number":null},"1054":{"numbers":"24","price":"180\u20ac","size":"398m<sup>2<\/sup>","house_number":null},"1055":{"numbers":"25","price":"180\u20ac","size":"450m<sup>2<\/sup>","house_number":null},"1056":{"numbers":"432","price":"180\u20ac","size":"656m<sup>2<\/sup>","house_number":""},"1057":{"numbers":"433","price":"180\u20ac","size":"656m<sup>2<\/sup>","house_number":""},"1058":{"numbers":"434","price":"180\u20ac","size":"657m<sup>2<\/sup>","house_number":null},"1059":{"numbers":"435","price":"180\u20ac","size":"657m<sup>2<\/sup>","house_number":""},"1060":{"numbers":"436","price":"180\u20ac","size":"657m<sup>2<\/sup>","house_number":""},"1061":{"numbers":"437","price":"180\u20ac","size":"657m<sup>2<\/sup>","house_number":""},"1062":{"numbers":"","price":"","size":"","house_number":""},"1063":{"numbers":"438","price":"180\u20ac","size":"629m<sup>2<\/sup>","house_number":""},"1064":{"numbers":"439","price":"180\u20ac","size":"642m<sup>2<\/sup>","house_number":""},"1065":{"numbers":"440","price":"180\u20ac","size":"642m<sup>2<\/sup>","house_number":""},"1066":{"numbers":"441","price":"180\u20ac","size":"643m<sup>2<\/sup>","house_number":""},"1067":{"numbers":"442","price":"180\u20ac","size":"678m<sup>2<\/sup>","house_number":""},"1068":{"numbers":"443","price":"180\u20ac","size":"678m<sup>2<\/sup>","house_number":""},"1069":{"numbers":"444","price":"180\u20ac","size":"678m<sup>2<\/sup>","house_number":""},"1070":{"numbers":"445","price":"180\u20ac","size":"678m<sup>2<\/sup>","house_number":""},"1071":{"numbers":"446","price":"180\u20ac","size":"728m<sup>2<\/sup>","house_number":""},"1072":{"numbers":"447","price":"180\u20ac","size":"741m<sup>2<\/sup>","house_number":""},"1073":{"numbers":"448","price":"180\u20ac","size":"741m<sup>2<\/sup>","house_number":""},"1074":{"numbers":"449","price":"180\u20ac","size":"741m<sup>2<\/sup>","house_number":""},"1075":{"numbers":"450","price":"180\u20ac","size":"741m<sup>2<\/sup>","house_number":""},"1076":{"numbers":"451","price":"180\u20ac","size":"826m<sup>2<\/sup>","house_number":""},"1077":{"numbers":"431","price":"180\u20ac","size":"554m<sup>2<\/sup>","house_number":""},"1078":{"numbers":"428","price":"180\u20ac","size":"514m<sup>2<\/sup>","house_number":null},"1079":{"numbers":"429","price":"180\u20ac","size":"510m<sup>2<\/sup>","house_number":""},"1080":{"numbers":"430","price":"180\u20ac","size":"541m<sup>2<\/sup>","house_number":null},"1081":{"numbers":"427","price":"180\u20ac","size":"480m<sup>2<\/sup>","house_number":""},"1082":{"numbers":"425","price":"180\u20ac","size":"1.068m<sup>2<\/sup>","house_number":null},"1083":{"numbers":"426","price":"180\u20ac","size":"475m<sup>2<\/sup>","house_number":""},"1084":{"numbers":"358","price":"180\u20ac","size":"270m<sup>2<\/sup>","house_number":""},"1085":{"numbers":"357","price":"180\u20ac","size":"220m<sup>2<\/sup>","house_number":""},"1086":{"numbers":"356","price":"180\u20ac","size":"220m<sup>2<\/sup>","house_number":""},"1087":{"numbers":"355","price":"180\u20ac","size":"220m<sup>2<\/sup>","house_number":null},"1088":{"numbers":"354","price":"180\u20ac","size":"270m<sup>2<\/sup>","house_number":null},"1089":{"numbers":"353","price":"180\u20ac","size":"270m<sup>2<\/sup>","house_number":""},"1090":{"numbers":"352","price":"180\u20ac","size":"220m<sup>2<\/sup>","house_number":""},"1091":{"numbers":"351","price":"180\u20ac","size":"220m<sup>2<\/sup>","house_number":""},"1092":{"numbers":"350","price":"180\u20ac","size":"220m<sup>2<\/sup>","house_number":""},"1093":{"numbers":"349","price":"180\u20ac","size":"271m<sup>2<\/sup>","house_number":""},"1094":{"numbers":"338","price":"180\u20ac","size":"291m<sup>2<\/sup>","house_number":""},"1095":{"numbers":"339","price":"180\u20ac","size":"239m<sup>2<\/sup>","house_number":""},"1096":{"numbers":"340","price":"180\u20ac","size":"231m<sup>2<\/sup>","house_number":""},"1097":{"numbers":"341","price":"180\u20ac","size":"223m<sup>2<\/sup>","house_number":null},"1098":{"numbers":"342","price":"180\u20ac","size":"270m<sup>2<\/sup>","house_number":null},"1099":{"numbers":"343","price":"180\u20ac","size":"270m<sup>2<\/sup>","house_number":null},"1100":{"numbers":"344","price":"180\u20ac","size":"220m<sup>2<\/sup>","house_number":null},"1101":{"numbers":"345","price":"180\u20ac","size":"220m<sup>2<\/sup>","house_number":null},"1102":{"numbers":"346","price":"180\u20ac","size":"220m<sup>2<\/sup>","house_number":""},"1103":{"numbers":"347","price":"180\u20ac","size":"270m<sup>2<\/sup>","house_number":""},"1104":{"numbers":"348","price":"180\u20ac","size":"2.456m<sup>2<\/sup>","house_number":""},"1105":{"numbers":"419","price":"180\u20ac","size":"479m<sup>2<\/sup>","house_number":null},"1106":{"numbers":"418","price":"180\u20ac","size":"479m<sup>2<\/sup>","house_number":null},"1107":{"numbers":"417","price":"180\u20ac","size":"479m<sup>2<\/sup>","house_number":null},"1108":{"numbers":"420","price":"180\u20ac","size":"421m<sup>2<\/sup>","house_number":null},"1109":{"numbers":"421","price":"180\u20ac","size":"421m<sup>2<\/sup>","house_number":null},"1110":{"numbers":"422","price":"180\u20ac","size":"422m<sup>2<\/sup>","house_number":null},"1111":{"numbers":"423","price":"180\u20ac","size":"485m<sup>2<\/sup>","house_number":null},"1112":{"numbers":"424","price":"180\u20ac","size":"840m<sup>2<\/sup>","house_number":null},"1113":{"numbers":"411","price":"180\u20ac","size":"841m<sup>2<\/sup>","house_number":null},"1114":{"numbers":"413","price":"180\u20ac","size":"438m<sup>2<\/sup>","house_number":null},"1115":{"numbers":"412","price":"180\u20ac","size":"477m<sup>2<\/sup>","house_number":null},"1116":{"numbers":"414","price":"180\u20ac","size":"438m<sup>2<\/sup>","house_number":null},"1117":{"numbers":"415","price":"180\u20ac","size":"264m<sup>2<\/sup>","house_number":null},"1118":{"numbers":"416","price":"180\u20ac","size":"345m<sup>2<\/sup>","house_number":null},"1119":{"numbers":"406","price":"180\u20ac","size":"433m<sup>2<\/sup>","house_number":null},"1120":{"numbers":"407","price":"180\u20ac","size":"445m<sup>2<\/sup>","house_number":null},"1121":{"numbers":"408","price":"180\u20ac","size":"445m<sup>2<\/sup>","house_number":null},"1122":{"numbers":"409","price":"180\u20ac","size":"508m<sup>2<\/sup>","house_number":null},"1123":{"numbers":"410","price":"180\u20ac","size":"885m<sup>2<\/sup>","house_number":null},"1124":{"numbers":"401","price":"180\u20ac","size":"796m<sup>2<\/sup>","house_number":null},"1125":{"numbers":"402","price":"180\u20ac","size":"510m<sup>2<\/sup>","house_number":null},"1126":{"numbers":"403","price":"180\u20ac","size":"505m<sup>2<\/sup>","house_number":null},"1127":{"numbers":"404","price":"180\u20ac","size":"259m<sup>2<\/sup>","house_number":null},"1128":{"numbers":"405","price":"180\u20ac","size":"271m<sup>2<\/sup>","house_number":null},"1129":{"numbers":"397","price":"180\u20ac","size":"444m<sup>2<\/sup>","house_number":null},"1130":{"numbers":"398","price":"180\u20ac","size":"456m<sup>2<\/sup>","house_number":null},"1131":{"numbers":"399","price":"180\u20ac","size":"475m<sup>2<\/sup>","house_number":null},"1132":{"numbers":"400","price":"180\u20ac","size":"475m<sup>2<\/sup>","house_number":null},"1133":{"numbers":"361","price":"180\u20ac","size":"475m<sup>2<\/sup>","house_number":null},"1134":{"numbers":"360","price":"180\u20ac","size":"895m<sup>2<\/sup>","house_number":null},"1135":{"numbers":"359","price":"180\u20ac","size":"1.506m<sup>2<\/sup>","house_number":""},"1136":{"numbers":"365","price":"180\u20ac","size":"300m<sup>2<\/sup>","house_number":null},"1137":{"numbers":"366","price":"180\u20ac","size":"256m<sup>2<\/sup>","house_number":null},"1138":{"numbers":"367","price":"180\u20ac","size":"300m<sup>2<\/sup>","house_number":null},"1139":{"numbers":"364","price":"180\u20ac","size":"504m<sup>2<\/sup>","house_number":null},"1140":{"numbers":"363","price":"180\u20ac","size":"458m<sup>2<\/sup>","house_number":null},"1141":{"numbers":"362","price":"180\u20ac","size":"463m<sup>2<\/sup>","house_number":null},"1142":{"numbers":"394","price":"180\u20ac","size":"472m<sup>2<\/sup>","house_number":null},"1143":{"numbers":"393","price":"180\u20ac","size":"305m<sup>2<\/sup>","house_number":null},"1144":{"numbers":"392","price":"180\u20ac","size":"288m<sup>2<\/sup>","house_number":null},"1145":{"numbers":"395","price":"180\u20ac","size":"385m<sup>2<\/sup>","house_number":null},"1146":{"numbers":"396","price":"180\u20ac","size":"385m<sup>2<\/sup>","house_number":null},"1147":{"numbers":"391","price":"180\u20ac","size":"389m<sup>2<\/sup>","house_number":null},"1148":{"numbers":"390","price":"180\u20ac","size":"404m<sup>2<\/sup>","house_number":null},"1149":{"numbers":"389","price":"180\u20ac","size":"405m<sup>2<\/sup>","house_number":null},"1150":{"numbers":"388","price":"180\u20ac","size":"468m<sup>2<\/sup>","house_number":null},"1151":{"numbers":"387","price":"180\u20ac","size":"480m<sup>2<\/sup>","house_number":null},"1152":{"numbers":"368","price":"180\u20ac","size":"286m<sup>2<\/sup>","house_number":null},"1153":{"numbers":"369","price":"180\u20ac","size":"210m<sup>2<\/sup>","house_number":null},"1154":{"numbers":"370","price":"180\u20ac","size":"210m<sup>2<\/sup>","house_number":null},"1155":{"numbers":"371","price":"180\u20ac","size":"210m<sup>2<\/sup>","house_number":null},"1156":{"numbers":"372","price":"180\u20ac","size":"210m<sup>2<\/sup>","house_number":null},"1157":{"numbers":"373","price":"180\u20ac","size":"210m<sup>2<\/sup>","house_number":null},"1158":{"numbers":"374","price":"180\u20ac","size":"287m<sup>2<\/sup>","house_number":null},"1159":{"numbers":"383","price":"180\u20ac","size":"486m<sup>2<\/sup>","house_number":null},"1160":{"numbers":"382","price":"180\u20ac","size":"478m<sup>2<\/sup>","house_number":null},"1161":{"numbers":"384","price":"180\u20ac","size":"482m<sup>2<\/sup>","house_number":null},"1162":{"numbers":"385","price":"180\u20ac","size":"481m<sup>2<\/sup>","house_number":null},"1163":{"numbers":"386","price":"180\u20ac","size":"480m<sup>2<\/sup>","house_number":null},"1164":{"numbers":"381","price":"180\u20ac","size":"509m<sup>2<\/sup>","house_number":""},"1165":{"numbers":"380","price":"180\u20ac","size":"496m<sup>2<\/sup>","house_number":""},"1166":{"numbers":"379","price":"180\u20ac","size":"585m<sup>2<\/sup>","house_number":""},"1167":{"numbers":"378","price":"180\u20ac","size":"565m<sup>2<\/sup>","house_number":""},"1168":{"numbers":"377","price":"180\u20ac","size":"540m<sup>2<\/sup>","house_number":null},"1169":{"numbers":"376","price":"180\u20ac","size":"440m<sup>2<\/sup>","house_number":""},"1170":{"numbers":"375","price":"180\u20ac","size":"452m<sup>2<\/sup>","house_number":""},"1171":{"numbers":"294","price":"180\u20ac","size":"353m<sup>2<\/sup>","house_number":null},"1172":{"numbers":"293","price":"180\u20ac","size":"356m<sup>2<\/sup>","house_number":null},"1173":{"numbers":"292","price":"180\u20ac","size":"445m<sup>2<\/sup>","house_number":null},"1174":{"numbers":"291","price":"180\u20ac","size":"401m<sup>2<\/sup>","house_number":""},"1175":{"numbers":"287","price":"180\u20ac","size":"342m<sup>2<\/sup>","house_number":null},"1176":{"numbers":"288","price":"180\u20ac","size":"315m<sup>2<\/sup>","house_number":null},"1177":{"numbers":"286","price":"180\u20ac","size":"259m<sup>2<\/sup>","house_number":null},"1178":{"numbers":"285","price":"180\u20ac","size":"269m<sup>2<\/sup>","house_number":null},"1179":{"numbers":"284","price":"180\u20ac","size":"278m<sup>2<\/sup>","house_number":null},"1180":{"numbers":"283","price":"180\u20ac","size":"435m<sup>2<\/sup>","house_number":""},"1181":{"numbers":"290","price":"180\u20ac","size":"263m<sup>2<\/sup>","house_number":null},"1182":{"numbers":"289","price":"180\u20ac","size":"263m<sup>2<\/sup>","house_number":null},"1183":{"numbers":"273","price":"180\u20ac","size":"505m<sup>2<\/sup>","house_number":""},"1184":{"numbers":"274","price":"180\u20ac","size":"470m<sup>2<\/sup>","house_number":""},"1185":{"numbers":"275","price":"180\u20ac","size":"465m<sup>2<\/sup>","house_number":""},"1186":{"numbers":"276","price":"180\u20ac","size":"456m<sup>2<\/sup>","house_number":""},"1187":{"numbers":"282","price":"180\u20ac","size":"269m<sup>2<\/sup>","house_number":""},"1188":{"numbers":"281","price":"180\u20ac","size":"298m<sup>2<\/sup>","house_number":""},"1189":{"numbers":"280","price":"180\u20ac","size":"298m<sup>2<\/sup>","house_number":""},"1190":{"numbers":"279","price":"180\u20ac","size":"298m<sup>2<\/sup>","house_number":""},"1191":{"numbers":"278","price":"180\u20ac","size":"298m<sup>2<\/sup>","house_number":""},"1192":{"numbers":"277","price":"180\u20ac","size":"277m<sup>2<\/sup>","house_number":""},"1193":{"numbers":"337","price":"180\u20ac","size":"307m<sup>2<\/sup>","house_number":null},"1194":{"numbers":"336","price":"180\u20ac","size":"298m<sup>2<\/sup>","house_number":null},"1195":{"numbers":"335","price":"180\u20ac","size":"266m<sup>2<\/sup>","house_number":null},"1196":{"numbers":"334","price":"180\u20ac","size":"234m<sup>2<\/sup>","house_number":null},"1197":{"numbers":"333","price":"180\u20ac","size":"234m<sup>2<\/sup>","house_number":null},"1198":{"numbers":"332","price":"180\u20ac","size":"234m<sup>2<\/sup>","house_number":null},"1199":{"numbers":"331","price":"180\u20ac","size":"234m<sup>2<\/sup>","house_number":null},"1200":{"numbers":"330","price":"180\u20ac","size":"222m<sup>2<\/sup>","house_number":null},"1201":{"numbers":"329","price":"180\u20ac","size":"480m<sup>2<\/sup>","house_number":null},"1202":{"numbers":"328","price":"180\u20ac","size":"480m<sup>2<\/sup>","house_number":null},"1203":{"numbers":"327","price":"180\u20ac","size":"247m<sup>2<\/sup>","house_number":null},"1204":{"numbers":"326","price":"180\u20ac","size":"260m<sup>2<\/sup>","house_number":null},"1205":{"numbers":"325","price":"180\u20ac","size":"260m<sup>2<\/sup>","house_number":null},"1206":{"numbers":"324","price":"180\u20ac","size":"260m<sup>2<\/sup>","house_number":null},"1207":{"numbers":"323","price":"180\u20ac","size":"234m<sup>2<\/sup>","house_number":null},"1208":{"numbers":"322","price":"180\u20ac","size":"267m<sup>2<\/sup>","house_number":null},"1209":{"numbers":"300","price":"180\u20ac","size":"257m<sup>2<\/sup>","house_number":""},"1210":{"numbers":"299","price":"180\u20ac","size":"257m<sup>2<\/sup>","house_number":""},"1211":{"numbers":"298","price":"180\u20ac","size":"257m<sup>2<\/sup>","house_number":null},"1212":{"numbers":"297","price":"180\u20ac","size":"257m<sup>2<\/sup>","house_number":null},"1213":{"numbers":"296","price":"180\u20ac","size":"257m<sup>2<\/sup>","house_number":""},"1214":{"numbers":"295","price":"180\u20ac","size":"300m<sup>2<\/sup>","house_number":""},"1215":{"numbers":"301","price":"180\u20ac","size":"421m<sup>2<\/sup>","house_number":null},"1216":{"numbers":"302","price":"180\u20ac","size":"375m<sup>2<\/sup>","house_number":null},"1217":{"numbers":"303","price":"180\u20ac","size":"509m<sup>2<\/sup>","house_number":""},"1218":{"numbers":"307","price":"180\u20ac","size":"213m<sup>2<\/sup>","house_number":null},"1219":{"numbers":"306","price":"180\u20ac","size":"225m<sup>2<\/sup>","house_number":null},"1220":{"numbers":"305","price":"180\u20ac","size":"354m<sup>2<\/sup>","house_number":null},"1221":{"numbers":"304","price":"180\u20ac","size":"458m<sup>2<\/sup>","house_number":""},"1222":{"numbers":"308","price":"180\u20ac","size":"451m<sup>2<\/sup>","house_number":null},"1223":{"numbers":"309","price":"180\u20ac","size":"354m<sup>2<\/sup>","house_number":null},"1224":{"numbers":"310","price":"180\u20ac","size":"458m<sup>2<\/sup>","house_number":""},"1225":{"numbers":"314","price":"180\u20ac","size":"225m<sup>2<\/sup>","house_number":null},"1226":{"numbers":"313","price":"180\u20ac","size":"225m<sup>2<\/sup>","house_number":null},"1227":{"numbers":"312","price":"180\u20ac","size":"354m<sup>2<\/sup>","house_number":null},"1228":{"numbers":"311","price":"180\u20ac","size":"458m<sup>2<\/sup>","house_number":""},"1229":{"numbers":"315","price":"180\u20ac","size":"438m<sup>2<\/sup>","house_number":null},"1230":{"numbers":"316","price":"180\u20ac","size":"354m<sup>2<\/sup>","house_number":null},"1231":{"numbers":"317","price":"180\u20ac","size":"458m<sup>2<\/sup>","house_number":""},"1232":{"numbers":"321","price":"180\u20ac","size":"244m<sup>2<\/sup>","house_number":null},"1233":{"numbers":"320","price":"180\u20ac","size":"249m<sup>2<\/sup>","house_number":null},"1234":{"numbers":"319","price":"180\u20ac","size":"378m<sup>2<\/sup>","house_number":null},"1235":{"numbers":"318","price":"180\u20ac","size":"428m<sup>2<\/sup>","house_number":""},"1237":{"numbers":"","price":"","size":"","house_number":""},"1238":{"numbers":"","price":"","size":"","house_number":""},"1239":{"numbers":"","price":"","size":"","house_number":""},"1240":{"numbers":"","price":"","size":"","house_number":""},"1241":{"numbers":"","price":"","size":"","house_number":""},"1243":{"numbers":"","price":"","size":"","house_number":""},"1244":{"numbers":"","price":"","size":"","house_number":""},"1245":{"numbers":"","price":"","size":"","house_number":""},"1246":{"numbers":"","price":"","size":"","house_number":""},"1247":{"numbers":"","price":"","size":"","house_number":""},"1248":{"numbers":"","price":"","size":"","house_number":""},"1249":{"numbers":"","price":"","size":"","house_number":""},"1250":{"numbers":"","price":"","size":"","house_number":""},"1252":{"numbers":"","price":"","size":"","house_number":""},"1253":{"numbers":"","price":"","size":"","house_number":""},"1254":{"numbers":"","price":"","size":"","house_number":""},"1255":{"numbers":"","price":"","size":"","house_number":""},"1256":{"numbers":"","price":"","size":"","house_number":""},"1257":{"numbers":"","price":"","size":"","house_number":""},"1258":{"numbers":"","price":"","size":"","house_number":""},"1260":{"numbers":"","price":"","size":"","house_number":""},"1261":{"numbers":"","price":"","size":"","house_number":""},"1262":{"numbers":"","price":"","size":"","house_number":""},"1263":{"numbers":"132","price":"\u20ac","size":"467m<sup>2<\/sup>","house_number":""},"1264":{"numbers":"131","price":"\u20ac","size":"369m<sup>2<\/sup>","house_number":""},"1265":{"numbers":"","price":"","size":"","house_number":""},"1266":{"numbers":"","price":"","size":"","house_number":""},"1267":{"numbers":"","price":"","size":"","house_number":""},"1268":{"numbers":"","price":"","size":"","house_number":""},"1269":{"numbers":"","price":"","size":"","house_number":""},"1270":{"numbers":"","price":"","size":"","house_number":""},"1271":{"numbers":"","price":"","size":"","house_number":""},"1273":{"numbers":"","price":"","size":"","house_number":""},"1274":{"numbers":"","price":"","size":"","house_number":""},"1275":{"numbers":"","price":"","size":"","house_number":""},"1277":{"numbers":"Abschnitt II","price":"\u20ac","size":"0m<sup>2<\/sup>","house_number":""},"1278":{"numbers":"Abschnitt I","price":"\u20ac","size":"0m<sup>2<\/sup>","house_number":""},"1279":{"numbers":"","price":"\u20ac","size":"0m<sup>2<\/sup>","house_number":""}}');
+            var style_o = {
+                'color': '#FF0000',
+                'fillColor': '#5cb85c',
+                'fillOpacity': 0.8,
+                'weight': '1'
+            };
+            var style_i = {
+                'color': '#FF0000',
+                'fillColor': '#009900',
+                'fillOpacity': 0.8,
+                'weight': '1'
+            };
+            var style_s = {
+                'color': '#FF0000',
+                'fillColor': '#FFEC8B',
+                'fillOpacity': 0.8,
+                'weight': '1'
+            };
+            var style_r = {
+                'color': '#FF0000',
+                'fillColor': '#f0ad4e',
+                'fillOpacity': 0.8,
+                'weight': '1'
+            };
+            var style_v = {
+                'color': '#FF0000',
+                'fillColor': '#d9534f',
+                'fillOpacity': 0.8,
+                'weight': '1'
+            };
+            var style_n = {
+                'color': '#FF0000',
+                'fillColor': '#777777',
+                'fillOpacity': 0.8,
+                'weight': '1'
+            };
+
+            function updatePopups(field) {
+                $.each(popups, function (key, value) {
+                    if (value) {
+                        value.setContent(' ');
+                        if (field !== 'no') {
+                            value.setContent(labelData[key][field]);
+                        }
+                    }
+                });
+            }
+
+            function showBuildingSite(bsid) {
+                $('#bs_box').html(loader_40);
+
+                // reset Style for all buildingSites
+                $.each(polys, function (key, value) {
+                    if (value) {
+                        value.setStyle({
+                            weight: '1'
+                        });
+                    }
+                });
+                // set Style for given buildingSite
+                polys[bsid].setStyle({
+                    weight: '5'
+                });
+
+                var toolbar = $('.leaflet-fullscreen-toolbar-pane');
+                var popupPaddingTop = toolbar.is(':visible') ? toolbar.height() + 5 : 5;
+
+                $('.map_bs').removeClass('info');
+                $('#bs_row_' + bsid).addClass('info');
+
+                $.ajax({
+                    url: bsUrl,
+                    data: {
+                        bsid: bsid
+                    },
+                    success: function (html) {
+                        /*$('#bs_box').html(html);*/
+
+                        var popup = L.popup({
+                            className: 'details-popup',
+                            autoPanPadding: [5, popupPaddingTop],
+                        })
+                            .setLatLng(polys[bsid].getBounds().getCenter())
+                            .setContent(html).on('remove', function() {
+                                resetPolygonsSelection();
+                            })
+                            .openOn(map);
+                    }
+                })
+            }
+
+            function resetPolygonsSelection() {
+                // reset Style for all buildingSites
+                $.each(polys, function(key, value) {
+                    if (value) {
+                        value.setStyle({
+                            weight: '1'
+                        });
+                    }
+                });
+            }
+
+            $('input[name="labels"]').on('change', function () {
+                //alert($(this).val());
+                updatePopups($(this).val());
+            });
+
+            // Modifikation von openPopup, um mehrere Labels gleichzeitig darzustellen
+            L.Map = L.Map.extend({
+                openPopup: function (popup) {
+                    this._popup = popup;
+
+                    return this.addLayer(popup).fire('popupopen', {
+                        popup: this._popup
+                    });
+                }
+            });
+
+            // Anpassen eines einzelnen Punktes an Kartendarstellung
+            function modify_point(point) {
+                return [point[0] * tile_size * image_ratio * -1, point[1] * tile_size]
+            }
+
+            // Anpassen mehrerer Punkte an Kartendarstellung
+            function modify_points(points) {
+                for (i = 0; i < points.length; i++)
+                    points[i] = modify_point(points[i]);
+                return points;
+            }
+
+            function modify_points2(points) {
+                for (i = 0; i < points.length; i++)
+                    points[i] = [points[i][0] * tile_size * image_ratio * ( -0.0), points[i][1] * tile_size * image_ratio]
+                return points;
+            }
+
+            function isNumeric(n) {
+                return !isNaN(parseFloat(n)) && isFinite(n);
+            }
+
+            // eigene Poly Center Funktion
+            function get_poly_center(points) {
+                x_min = points[0][0];
+                x_max = points[0][0];
+                y_min = points[0][1];
+                y_max = points[0][1];
+                for (i = 1; i < points.length; i++) {
+                    if (points[i][0] < x_min)
+                        x_min = points[i][0];
+                    if (points[i][0] > x_max)
+                        x_max = points[i][0];
+                    if (points[i][1] < y_min)
+                        y_min = points[i][1];
+                    if (points[i][1] > y_max)
+                        y_max = points[i][1];
+                }
+                return [x_min + (x_max - x_min) / 2, y_min + (y_max - y_min) / 2]
+            }
+
+            // Initialisierung der Karte
+            var map = L.map('map', {
+                crs: L.CRS.Simple,
+                scrollWheelZoom: false,
+                fullscreenControl: true
+            });
+            map.setView(modify_point([0.5, 0.5]), 2);
+
+            var bounds = [[0, 0], modify_point([1, 1])];
+
+            // Initialisieren des Hintergrundbildes
+            L.tileLayer(tile_path + '{z}/{x}/{y}.jpg', {
+                minZoom: 2,
+                maxZoom: 6,
+                maxNativeZoom: 5,
+                noWrap: true,
+                tileSize: tile_size,
+                continuousWorld: true
+            }).addTo(map);
+
+            // Begrenzen der Karte auf das Bild
+            map.setMaxBounds(bounds);
+            map.on('drag', function (e) {
+                map.panInsideBounds(bounds);
+            });
+
+            map.on('drag resize zoomend', function () {
+                styleLabels();
+            });
+
+            function styleLabels() {
+                                                var bsSelector = $('.bs_1277');
+                if (bsSelector.length) {
+                    bsSelector.css({
+                        'top': '',
+                        'bottom': '5em',
+                        'left': "",
+                        'right': ''
+                    });
+                }
+                                                                var bsSelector = $('.bs_1278');
+                if (bsSelector.length) {
+                    bsSelector.css({
+                        'top': '',
+                        'bottom': '',
+                        'left': "10em",
+                        'right': ''
+                    });
+                }
+                                            }
+
+            var privateBuildingSitesLayerGroup = new L.LayerGroup();
+            var localAuthorityBuildingSitesLayerGroup = new L.LayerGroup();
+            var buildingSitesLayerGroup = new L.LayerGroup();
+
+                                                                                                                                                            
+                polys[1277] = L.polygon(modify_points([ [0.91726069246435848,0.085305343511450388],[0.67846232179226074,0.58759541984732822],[0.85717922606924646,0.77748091603053437],[0.70162932790224031,0.99923664122137401],[0.44144602851323828,0.58167938931297714],[0.46970468431771895,0.49446564885496186],[0.45035641547861505,0.46622137404580155],[0.51043788187372707,0.25858778625954199]]), style_n).addTo(map);
+
+                polys[1277].on('click', function (e) {
+                    showBuildingSite(1277);
+                });
+
+                var content = document.createElement('div');
+                content.innerHTML = 'Abschnitt II';
+                L.DomEvent.addListener(content, 'click', function (e) {
+                    showBuildingSite(1277);
+                });
+
+                popups[1277] = L.popup({
+                    closeButton: false,
+                    closeOnClick: false,
+                    className: 'no-popup bs_1277'
+                })
+                    .setLatLng(modify_point(get_poly_center([[0.91726069246435848,0.085305343511450388],[0.67846232179226074,0.58759541984732822],[0.85717922606924646,0.77748091603053437],[0.70162932790224031,0.99923664122137401],[0.44144602851323828,0.58167938931297714],[0.46970468431771895,0.49446564885496186],[0.45035641547861505,0.46622137404580155],[0.51043788187372707,0.25858778625954199]])))
+                    .setContent(content)
+                    .openOn(map);
+
+                // Gruppieren der Bauplätze (samt Popups) in LayerGroups
+                                    buildingSitesLayerGroup.addLayer(polys[1277]);
+                    buildingSitesLayerGroup.addLayer(popups[1277]);
+                            
+                                                                                                                
+                polys[1278] = L.polygon(modify_points([[0.5157841140529531,0.7916030534351145],[0.48217922606924646,0.86240458015267174],[0.4679226069246436,0.84465648854961828],[0.45035641547861505,0.89312977099236646],[0.44322810590631362,0.87194656488549616],[0.4310081466395112,0.90496183206106873],[0.42209775967413443,0.88835877862595425],[0.40427698574338083,0.93072519083969463],[0.36379837067209775,0.81297709923664119],[0.34063136456211812,0.7396946564885496],[0.4485743380855397,0.28702290076335879],[0.48930753564154789,0.27270992366412211],[0.43788187372708759,0.45209923664122137],[0.46970468431771895,0.49446564885496186],[0.43966395112016293,0.58167938931297714],[0.42566191446028512,0.56049618320610683],[0.414969450101833,0.60057251908396947]]), style_o).addTo(map);
+
+                polys[1278].on('click', function (e) {
+                    showBuildingSite(1278);
+                });
+
+                var content = document.createElement('div');
+                content.innerHTML = 'Abschnitt I';
+                L.DomEvent.addListener(content, 'click', function (e) {
+                    showBuildingSite(1278);
+                });
+
+                popups[1278] = L.popup({
+                    closeButton: false,
+                    closeOnClick: false,
+                    className: 'no-popup bs_1278'
+                })
+                    .setLatLng(modify_point(get_poly_center([[0.5157841140529531,0.7916030534351145],[0.48217922606924646,0.86240458015267174],[0.4679226069246436,0.84465648854961828],[0.45035641547861505,0.89312977099236646],[0.44322810590631362,0.87194656488549616],[0.4310081466395112,0.90496183206106873],[0.42209775967413443,0.88835877862595425],[0.40427698574338083,0.93072519083969463],[0.36379837067209775,0.81297709923664119],[0.34063136456211812,0.7396946564885496],[0.4485743380855397,0.28702290076335879],[0.48930753564154789,0.27270992366412211],[0.43788187372708759,0.45209923664122137],[0.46970468431771895,0.49446564885496186],[0.43966395112016293,0.58167938931297714],[0.42566191446028512,0.56049618320610683],[0.414969450101833,0.60057251908396947]])))
+                    .setContent(content)
+                    .openOn(map);
+
+                // Gruppieren der Bauplätze (samt Popups) in LayerGroups
+                                    buildingSitesLayerGroup.addLayer(polys[1278]);
+                    buildingSitesLayerGroup.addLayer(popups[1278]);
+                            
+            
+            $('.leaflet-popup-content').on('click', function (e) {
+                var classes = $(this).parent().parent()[0].className.split(' ');
+                $.each(classes, function (key, value) {
+                    if (isNumeric(value.replace('bs_', ''))) {
+                        showBuildingSite((value.replace('bs_', '')));
+                    }
+                });
+            });
+
+            $('.map_bs').on('click', function () {
+                showBuildingSite($(this).data('bs'));
+            });
+
+            
+            // Anzeige Leerstandskataster
+            map.addLayer(buildingSitesLayerGroup);
+            map.addLayer(privateBuildingSitesLayerGroup);
+            map.addLayer(localAuthorityBuildingSitesLayerGroup)
+            $('input[name="show"]').on('click', function () {
+                if ($('input:radio[name="show"]:checked').val() == "show_all") {
+                    map.addLayer(buildingSitesLayerGroup);
+                    map.addLayer(privateBuildingSitesLayerGroup);
+                    map.addLayer(localAuthorityBuildingSitesLayerGroup)
+                }
+                if ($('input:radio[name="show"]:checked').val() == "show_private") {
+                    map.removeLayer(buildingSitesLayerGroup);
+                    map.removeLayer(localAuthorityBuildingSitesLayerGroup);
+                    map.addLayer(privateBuildingSitesLayerGroup);
+                }
+                if ($('input:radio[name="show"]:checked').val() == "show_local_authority") {
+                    map.removeLayer(buildingSitesLayerGroup);
+                    map.removeLayer(privateBuildingSitesLayerGroup);
+                    map.addLayer(localAuthorityBuildingSitesLayerGroup);
+                }
+            });
+
+            styleLabels();
+
+            $('.map-watermark-cover').on('click', function(e) {
+                map.toggleFullscreen();
+            })
+
+            map.on('fullscreenchange', function() {
+                if (map.isFullscreen()) {
+                    console.log('entered fullscreen');
+                    $(map.getPane('fullscreen-toolbar')).show();
+                    $(map.getPane('fullscreen-footer')).show();
+                    $(".leaflet-control-container").show();
+
+                    try {
+                        $('select').select2('destroy');
+                    } catch (e) {
+                        // prevent error if select 2 was already destroyed on earlier fullscreen action
+                    }
+
+                } else {
+                    console.log('exited fullscreen');
+                    $(map.getPane('fullscreen-toolbar')).hide();
+                    $(map.getPane('fullscreen-footer')).hide();
+                    $(".leaflet-control-container").hide();
+                }
+            });
+
+            var pane = map.createPane('fullscreen-toolbar', $('.map-container')[0]);
+            var element = $('#map-toolbar').detach();
+            $(pane).append(element);
+            $(pane).hide();
+
+            pane = map.createPane('fullscreen-footer', $('.map-container')[0]);
+            element = $('#map-footer').detach();
+            $(pane).append(element);
+            $(pane).hide();
+
+            $(".leaflet-control-container").hide();
+
+            // Beschriftung
+            $('select[name="labels"]').on('change', function() {
+                updatePopups($(this).val());
+            });
+
+            $('.exit-fullscreen-btn').on('click', function(e) {
+                e.preventDefault();
+                map.toggleFullscreen();
+            });
+        });
+    </script>
+
+
+<script>
+
+    var gaProperty = 'UA-90437585-1';
+    var disableStr = 'ga-disable-' + gaProperty;
+    if (document.cookie.indexOf(disableStr + '=true') > -1) {
+        window[disableStr] = true;
+    }
+
+    function gaOptout() {
+        document.cookie = disableStr + '=true; expires=Thu, 31 Dec 2099 23:59:59 UTC; path=/';
+        window[disableStr] = true;
+    }
+
+    function gaStart(){
+
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', gaProperty, 'auto');
+        ga('set', 'anonymizeIp', true);
+        ga('send', 'pageview');
+    }
+
+    window.addEventListener("load", function(){
+        window.cookieconsent.initialise({
+            "palette": {
+                "popup": {
+                    "background": "#000"
+                },
+                "button": {
+                    "background": "#96c11f"
+                }
+            },
+            "type": "opt-in",
+            "content": {
+                "message": "Wir nutzen Cookies auf unserer Website. Einige davon sind technisch notwendig, während andere uns helfen, die Webseite zu analysieren, für Sie optimal zu gestalten und fortlaufend zu verbessern. Weitere Informationen zu Cookies erhalten Sie in unseren",
+                "allow": "Alle Cookies zulassen",
+                "deny": "Notwendige Cookies zulassen",
+                "link": "Datenschutzhinweisen.",
+                "href": "https://www.freiebaugrundstuecke.de/page/datenschutz",
+                "policy": 'Cookies'
+            },
+            onInitialise: function (status) {
+                var type = this.options.type;
+                var didConsent = this.hasConsented();
+                if (type === 'opt-in' && didConsent) {
+                    // enable cookies
+                    gaStart();
+
+                }
+                if (type === 'opt-out' && !didConsent) {
+                    // disable cookies
+
+                }
+            },
+            onStatusChange: function(status, chosenBefore) {
+                var type = this.options.type;
+                var didConsent = this.hasConsented();
+                if (type === 'opt-in' && didConsent) {
+
+                    gaStart();
+
+                    // enable cookies
+                }
+                if (type === 'opt-out' && !didConsent) {
+                    // disable cookies
+
+                }
+            },
+        });
+    </script>
+
+</body>
+
+</html>
